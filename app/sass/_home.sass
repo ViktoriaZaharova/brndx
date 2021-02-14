@@ -1,0 +1,215 @@
+//home
+.main-home
+  background: linear-gradient(180deg, rgba(255, 249, 245, 0) 27.08%, #FFF9F5 100%), radial-gradient(75.42% 66.64% at 100% 100%, #FFF9F5 0%, rgba(255, 249, 245, 0) 51.04%), radial-gradient(74.86% 62.55% at 0% 100%, #FFF9F5 0%, rgba(255, 245, 245, 0) 49.22%), linear-gradient(90deg, #ED6D43 0%, #ED3751 33.35%, #249DDF 66.78%, #5AED78 100%)
+  color: #fff
+  position: relative
+  padding: 92px 0 0
+
+  h1
+    margin: 0 auto 92px
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: 18px
+    left: 370px
+    width: 58px
+    height: 66px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: 25px
+    width: 57px
+    height: 54px
+    right: 370px
+    background: url("../img/decor2.png") no-repeat center
+      size: contain
+
+
+//partners
+.partners
+  margin: 48px 0 -24px
+
+
+.partners-box
+  height: 200px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 20%
+  max-width: 200px
+  margin: 0 0 24px
+
+//bloggers
+.bloggers
+  padding: 53px 0 38px
+  background: #FFF9F5
+  position: relative
+  overflow: hidden
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 528px
+    height: 484px
+    background: url("../img/decor3.svg") no-repeat center
+      size: contain
+
+.bloggers-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+  h3
+    font-size: 20px
+    font-weight: 600
+    color: #0B0C0D
+
+.status
+  font-feature-settings: 'ordn' on
+  color: #4B5257
+  font-weight: bold
+
+.bloggers-box__photo
+  margin: 29px auto 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  padding: 7px
+  overflow: hidden
+  background: url("../img/border-photo.svg") no-repeat center
+    size: 100%
+  width: 214px
+  height: 214px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 50%
+
+//projects
+.projects
+  padding: 48px 0
+
+  .btn
+    font-size: 20px
+    padding: 12px 113px
+    margin: 16px auto 0
+
+.projects-card
+  height: 100%
+  width: 100%
+  background: #fff
+  overflow: hidden
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)
+  border-radius: 8px
+  color: #6C757D
+  &__img
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 208px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 16px
+    width: 100%
+
+.projects-card__title
+  margin: 0 0 16px
+  color: #4B5257
+  font-size: 20px
+  font-weight: 600
+  &:hover
+    color: $accent
+
+.date
+  font-size: 12.8px
+  font-family: $font
+  color: #6C757D
+  line-height: 19px
+
+//hero
+.hero
+  background: #FFF9F5
+  position: relative
+  padding: 0 0 42px
+  &:before
+    content: ''
+    position: absolute
+    width: 200px
+    height: 150px
+    left: 22px
+    bottom: 32px
+    background: url("../img/decor4.png") no-repeat center
+      size: contain
+  &:after
+    content: ''
+    position: absolute
+    width: 145px
+    height: 160px
+    background: url("../img/decor5.png") no-repeat center
+      size: contain
+    right: 13px
+    bottom: 110px
+  .box-text
+    text-align: center
+    font-family: $font
+    line-height: 24px
+  .btn
+    margin: 0 auto 24px
+
+.hero-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+  margin: 0 0 24px
+  width: 20%
+  color: #0B0C0D
+  font-weight: bold
+  p
+    max-width: 180px
+    margin: 0 auto
+  &__icon
+    height: 144px
+    max-width: 144px
+    margin: 0 auto 32px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+.social-share
+  position: absolute
+  right: 20px
+  top: 60px
+  z-index: 2
+  display: flex
+  flex-direction: column
+  align-items: center
+  li
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+    a
+      width: 32px
+      height: 32px
+      img
+        width: 100%
+
+

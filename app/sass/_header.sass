@@ -1,0 +1,195 @@
+header
+  background: linear-gradient(90deg, #ED6D43 0%, #ED3751 33.35%, #249DDF 66.78%, #5AED78 100%)
+  color: #fff
+  padding: 10px 0
+  position: relative
+  z-index: 2
+  .logo
+    max-width: 98px
+  .btn
+    padding: 7px 11px
+
+.btn-burger, .mobile-menu
+  display: none
+
+.btn-burger
+  margin: 0 8px 0 0
+  width: 40px
+  height: 40px
+  padding: 10.4px 11px
+  justify-content: space-between
+  flex-direction: column
+  align-items: center
+  background: url("../img/burger.svg") no-repeat center
+    size: 18px
+  transition: .3s ease
+
+.btn-burger.click
+  background: url("../img/close.svg") no-repeat center
+    size: 17.85px
+
+.search-wrapper
+  position: relative
+  margin: 0 8px 0 0
+
+.btn-search
+  cursor: pointer
+  fill: #fff
+  padding: 8px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 40px
+  height: 40px
+  .svg-icon
+    width: 24px
+    height: 24px
+
+.search-dropdown
+  position: absolute
+  right: -20px
+  top: 0
+  min-width: 619px
+  width: 100%
+  display: none
+
+
+.form-search
+  width: 100%
+  position: relative
+  input
+    height: 36px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15)
+    background: #fff
+    border-radius: 90px
+    padding: 0 60px 0 16px
+    font-family: $default-font
+    color: #6C757D
+    font-feature-settings: 'pnum' on, 'lnum' on
+    &::placeholder
+      color: #6C757D
+  button
+    width: 24px
+    height: 24px
+    position: absolute
+    padding: 2.4px
+    right: 15px
+    top: 50%
+    transform: translate(0,-50%)
+    fill: $accent
+    display: flex
+    align-items: center
+    justify-content: center
+  label
+    margin: 0
+
+.search-result
+  width: 100%
+  max-width: 590px
+  margin: 0 auto
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15)
+  background: #fff
+  padding: 24px
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  display: none
+
+.search-result-col
+  width: 32%
+  h3
+    margin: 0 0 19px
+    color: #2A2E30
+    font-size: 20px
+    font-weight: 600
+
+.list-menu-search
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    a
+      color: #2A2E30
+      font-weight: 600
+      font-family: $font
+      font-size: 12.8px
+      &:hover
+        color: $accent
+
+.mobile-menu
+  position: absolute
+  left: 0
+  top: 100%
+  width: 100%
+  z-index: 2
+  padding: 16px 0
+  background: rgba(255, 255, 255, 0.4)
+  backdrop-filter: blur(30px)
+  font-family: $font
+  font-size: 16px
+
+
+.mobile-menu-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.mobile-menu-links
+  color: #fff
+  padding: 8px 12px
+  width: 100%
+
+.mobile-menu-sub
+  margin: 8px 0
+  li
+    a
+      padding: 8px 12px
+      color: #4B5257
+
+
+.mobile-menu-list
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+  justify-content: space-between
+
+.mobile-menu-box
+  max-width: 248px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.notification
+  width: 40px
+  min-width: 40px
+  height: 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #fff
+  padding: 11px 12px
+  position: relative
+  margin: 0 0 0 8px
+
+.notification-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+
+.notification-circle
+  border-radius: 50%
+  background: #fff
+  position: absolute
+  width: 6px
+  height: 6px
+  left: calc(50% - 6px/2 + 5px)
+  top: calc(50% - 6px/2 - 5px)
+
+.btn-user-icon
+  display: none

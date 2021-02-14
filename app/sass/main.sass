@@ -1,0 +1,341 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  color: #0B0C0D
+  background: #fff
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 12px
+  box-sizing: border-box
+  font-family: $font
+  font-size: 16px
+  background: #F7F8FA
+  border-radius: 4px
+  border: none
+  color: #0B0C0D
+  width: 100%
+  height: 40px
+  &:hover, &:focus
+    outline: none
+
+textarea
+  padding: 6px 12px
+  height: 100px
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 16px
+
+
+//.bg-primary
+//  background: $accent
+//
+//.bg-secondary
+//  background: $grey
+//
+//.bg-success
+//  background: $green
+//
+//.bg-danger
+//  background: $red
+//
+//.bg-warning
+//  background: $yellow
+//
+//.bg-info
+//  background: $blue
+//
+//.bg-light
+//  background: $light
+//
+//.bg-dark
+//  background: $graphite
+//
+//.bg-white
+//  background: #fff
+//
+//.bg-transparent
+//  background: transparent
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 12px 16px
+  border: none
+    radius: 0
+  font-weight: 500
+  font-family: $default-font
+  font-size: 16px
+  font-feature-settings: 'pnum' on, 'lnum' on
+  transition: .3s ease
+  border-radius: 4.8px
+  width: fit-content
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn-border
+  border: 1px solid rgba(255, 255, 255, 0.5)
+    radius: 4px
+  color: #F8F9FA
+  background: transparent
+  padding: 7px 10.5px
+
+  &:hover
+    background: rgba(255, 255, 255, 0.5)
+    color: #F8F9FA
+
+.btn-primary
+  background: $accent
+  color: #fff
+  &:hover
+    background: $red
+
+
+.btn-group
+  .btn
+    flex: none
+
+    &:not(:last-child):not(.dropdown-toggle)
+      border-radius: 4px
+      margin: 0 16px 0 0
+
+    &:not(:first-child)
+      border-radius: 4px
+
+button
+  outline: none
+  padding: 0
+  box-shadow: none
+  box-sizing: border-box
+  transition: .3s ease
+  cursor: pointer
+  border: none
+  background: transparent
+  &:hover, &:focus
+    outline: none
+
+h1
+  width: 100%
+  text-align: center
+  font-size: 48px
+
+h2
+  text-align: center
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  font-size: 40px
+  font-weight: 600
+  margin: 0 auto 24px
+
+  &:before
+    content: ''
+    display: inline-block
+    margin: 0 4px 0 0
+    width: 52px
+    height: 48px
+    background: url("../img/element-title.svg") no-repeat center
+      size: 100%
+
+.logo
+  max-width: 81px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 8px 0 0
+
+.btn-scroll-up
+  width: 48px
+  height: 48px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+  background: rgba(255, 255, 255, 0.5)
+  position: fixed
+  backdrop-filter: blur(20px)
+  padding: 12px
+  border-radius: 4.8px
+  z-index: 2
+  right: 16px
+  bottom: 20px
+  &:hover
+    .svg-icon
+      fill: #E83E8C
+  .svg-icon
+    fill: #4B5257
+
+
+.svg-icon
+  width: 100%
+  height: 100%
+  display: inline
+  transition: .3s ease
+
+.mb-32
+  margin: 0 0 32px
+
+.container
+  position: relative
+  z-index: 1
+
+.dropdown-menu
+  margin: 0
+  min-width: auto
+  z-index: 3
+  background: rgba(255, 255, 255, 0.4)
+  border: none
+    radius: 0
+  backdrop-filter: blur(30px)
+  padding: 8px 0
+  font-size: 16px
+  left: 8px
+
+.dropdown-item
+  padding: 8px 12px
+  color: #4B5257
+  font-family: $font
+  font-size: 16px
+  display: flex
+  align-items: center
+
+  &:hover
+    background: transparent
+    color: #0B0C0D
+    .svg-icon
+      fill: #0B0C0D
+    .dropdown-item-text
+      color: #0B0C0D
+
+.navbar
+  padding: 0
+  margin: 0 0 0 auto
+
+.dropdown-toggle
+  color: #FFFFFF
+  font-feature-settings: 'pnum' on, 'lnum' on
+  font-weight: 500
+  font-size: 16px
+  padding: 8px 12px
+  &::after
+    border-right: 5px solid transparent
+    border-left: 5px solid transparent
+    border-top: 5px solid
+    vertical-align: .15em
+  &:hover
+    color: $graphite
+
+.dropdown-item-text
+  padding: 0
+  color: #4B5257
+  transition: .3s ease
+
+.dropdown-item-icon
+  margin: 0 8px 0 0
+  width: 20px
+  height: 20px
+  fill: #4B5257
+  display: flex
+  align-items: center
+  justify-content: center
+
+@import "header"
+@import "home"
+@import "footer"
+@import "media"
+// Всегда в конце
