@@ -391,8 +391,8 @@
 
       <div class="col-12 col-md-12 col-lg-4 col-xl-5">
         <div class="btn-group">
-          <a href="#" class="btn btn-border">Сотрудничество</a>
-          <a href="#" class="btn btn-border">Написать нам</a>
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modalEntrance2">Сотрудничество</a>
+          <a href="#" class="btn btn-border" data-toggle="modal" data-target="#modalCallback">Написать нам</a>
         </div>
       </div>
     </div>
@@ -477,6 +477,123 @@
           <h4>Нет аккаунта?</h4>
           <a href="registration.html" class="btn btn-border-accent">Зарегистрируйтесь</a>
         </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal fade" id="modalEntrance2" tabindex="-1" aria-labelledby="modalEntranceLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-content__left">
+        <div class="modal-item">
+          <div class="modal-icon"><img src="img/modal-icon1.svg" alt=""></div>
+          <h2 class="modal-greeting">Добро пожаловать!</h2>
+        </div>
+
+      </div>
+
+      <div class="modal-content__right">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+        <div class="modal-header">
+          <h3 class="modal-title">Вход</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="quick-entry">
+            <a href="#" class="btn-social btn btn-blue" target="_blank">
+              <span class="btn-social__icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#facebook"></use></svg></span>
+              <span class="btn-social__text">Войдите через Facebook</span>
+            </a>
+            <div class="or">
+              <span>или</span>
+            </div>
+
+          </div>
+
+          <h4>Войдите с помощью почты</h4>
+
+          <form method="post" class="form">
+            <label>
+              <span class="input-title">Email</span>
+              <input type="text" name="mail" value="k.konstantinopolsky@gmail.com" required>
+            </label>
+            <label>
+              <span class="input-title">Пароль</span>
+              <input type="password" name="password" required value="••••••••">
+            </label>
+
+            <label class="checkbox">
+              <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Запомнить меня</span>
+            </label>
+
+            <div class="btn-group">
+              <button type="submit" class="btn btn-primary">Войти</button>
+              <a href="#" class="links-accent">Забыли пароль?</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <h4>Нет аккаунта?</h4>
+          <a href="registration.html" class="btn btn-border-accent">Зарегистрируйтесь</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="modal fade" id="modalCallback" tabindex="-1" aria-labelledby="modalCallbackLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-content__left">
+        <div class="modal-item">
+          <div class="modal-icon"><img src="img/modal-icon2.svg" alt=""></div>
+          <h2 class="modal-greeting">Напишите нам</h2>
+        </div>
+
+      </div>
+
+      <div class="modal-content__right">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+        <div class="modal-header">
+          <h3 class="modal-title">Обратная связь</h3>
+        </div>
+
+        <div class="modal-body">
+          <form method="post" class="form form-callback">
+            <label>
+              <span class="input-title">Ваше имя</span>
+              <input type="text" name="name">
+            </label>
+            <label>
+              <span class="input-title">Ваш email</span>
+              <input type="text" name="mail" required>
+            </label>
+            <label>
+              <span class="input-title">Тема сообщения</span>
+              <input type="text" name="theme">
+            </label>
+
+            <label>
+              <span class="input-title">Текст сообщения</span>
+              <textarea name="message"></textarea>
+            </label>
+            
+            <div class="recaptcha"><img src="img/recaptcha.jpg" alt=""></div>
+
+            <button type="submit" class="btn btn-primary">Отправить</button>
+
+          </form>
+        </div>
+
       </div>
     </div>
   </div>

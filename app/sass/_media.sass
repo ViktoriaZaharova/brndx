@@ -160,9 +160,12 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 630px)
+@media only screen and (max-width: 635px)
   .search-dropdown
     min-width: 302px
+
+  .modal-content__right
+    padding: 48px 15px 40px
 
 @media only screen and (max-width: 575px)
   .nav-footer
@@ -284,6 +287,24 @@
         max-width: 210px
     .box-text
       margin: 0
+
+
+  .modal-content__left
+    display: none
+
+  .modal-content__right
+    width: 100%
+
+  .modal-content
+    max-width: 320px
+    border-radius: 0
+
+  .form-callback
+    label
+      margin: 0 0 16px
+
+  .recaptcha
+    margin: 0 0 16px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
