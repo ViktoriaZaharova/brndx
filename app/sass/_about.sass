@@ -1,0 +1,68 @@
+.title
+  margin: 33px 0 32px
+  h1
+    text-align: left
+    font-size: 40px
+    font-weight: 600
+    color: #0B0C0D
+
+.about
+  padding: 56px 0
+  position: relative
+  overflow: hidden
+  &:before, &:after
+    content: ''
+    position: absolute
+  &:before
+    width: 58px
+    height: 66px
+    background: url("../img/decor1.png") no-repeat center
+      size: contain
+    top: -12px
+    left: 77px
+  &:after
+    width: 200px
+    height: 150px
+    background: url("../img/decor4.png") no-repeat center
+      size: contain
+    top: 29px
+    right: -29px
+  .container
+    &:before
+      content: ''
+      position: absolute
+      width: 145px
+      height: 160px
+      background: url("../img/decor5.png") no-repeat center
+        size: contain
+      bottom: -56px
+      left: 22px
+  .box-text
+    display: flex
+    align-items: flex-start
+    font-size: 48px
+    span
+      margin: 0 8px
+
+
+.img-logo
+  width: 166px
+  min-width: 166px
+
+.hero-about
+  margin: 32px 0 0
+  .box-text
+    color: #6C757D
+    text-align: center
+    font-family: $font
+    line-height: 24px
+  .hero-box
+    font-size: 16px
+    margin: 0 0 32px
+    p
+      max-width: 196px
+  .hero-box__icon
+    height: 72px
+    max-width: 72px
+    margin: 0 auto 16px
+

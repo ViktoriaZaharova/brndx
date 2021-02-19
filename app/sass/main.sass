@@ -334,8 +334,63 @@ h2
   align-items: center
   justify-content: center
 
+//.breadcrumbs
+.breadcrumbs
+  padding: 16px 0
+  border-bottom: 1px solid #EBEEF2
+
+.breadcrumb
+  padding: 0
+  border-radius: 0
+  background: transparent
+  margin: 0
+  font-family: "Inter", sans-serif
+  font-size: 12.8px
+  line-height: 19px
+
+.breadcrumb-item
+  a
+    color: #ED6D43
+
+.breadcrumb-item.active
+  color: #6C757D
+
+.breadcrumb-item+.breadcrumb-item
+  padding-left: 8px
+
+.breadcrumb-item+.breadcrumb-item::before
+  color: #EBEEF2
+  padding-right: 8px
+
+.bg-beige
+  background: #FFF9F5
+
+.list-line
+  color: #6C757D
+  line-height: 24px
+  li
+    display: flex
+    align-items: flex-start
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+    &:before
+      content: '—'
+      display: inline-block
+      color: #F28D65
+      margin: 0 8px 0 0
+  strong
+    font-weight: bold
+
+.mb-30
+  margin-bottom: 30px
+
+
 @import "header"
 @import "home"
 @import "footer"
+@import "about"
+@import "clients"
+@import "contacts"
 @import "media"
 // Всегда в конце

@@ -10,6 +10,35 @@
   .main-home:after
     display: none
 
+  .title
+    margin: 32px 0
+
+  .about
+    .container
+      &:before
+        left: -21px
+        bottom: 22px
+    &:after
+      right: 24px
+      top: 57px
+    &:before
+      left: 70px
+      top: -12px
+
+
+  .clients
+    &:after
+      right: 24px
+    &:before
+      left: 70px
+    .container
+      &:before
+        left: -103px
+
+  .hero-about .hero-box
+    p
+      max-width: 160px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   footer
@@ -42,6 +71,15 @@
 
   .search-wrapper
     margin: 0
+
+  .hero-about
+    .hero-box
+      margin: 0 0 16px
+      p
+        max-width: 208px
+    .box-text
+      margin: 16px 0 0
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -97,6 +135,28 @@
     &:last-child
       margin: 0
 
+  .advantages-company__box
+    margin-bottom: 32px
+
+  .img-logo
+    width: 130px
+    min-width: 130px
+
+  .clients .container:before, .clients:after, .about .container:before, .about:after
+    display: none
+
+  .clients:before
+    left: 70px
+    top: -12px
+
+  .clients
+    h3
+      font-size: 36px
+
+  .about
+    .box-text
+      font-size: 36px
+
 
 
 /* Extra Small Devices, Phones */
@@ -104,7 +164,7 @@
   .search-dropdown
     min-width: 302px
 
-@media only screen and (max-width: 576px)
+@media only screen and (max-width: 575px)
   .nav-footer
     width: 100%
     margin: 24px 0 0
@@ -198,6 +258,32 @@
   .notification-circle
     top: calc(50% - 6px/2 - 4.5px)
     left: calc(50% - 6px/2 + 5.5px)
+
+  .advantages-company__box-icon
+    margin: 0 auto 8px
+
+  .clients
+    h3
+      font-size: 24px
+    .img-logo
+      margin: 0 auto 8px
+
+  .about
+    .box-text
+      font-size: 24px
+      flex-wrap: wrap
+
+  .img-logo
+    width: 86px
+    min-width: 86px
+
+  .hero-about
+    .hero-box
+      margin: 0 auto 32px
+      p
+        max-width: 210px
+    .box-text
+      margin: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)

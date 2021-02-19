@@ -1,0 +1,45 @@
+.contacts-box
+  height: 100%
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)
+  background: #fff
+  border-radius: 8px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding: 24px
+  min-height: 327px
+  h3
+    font-size: 24px
+    font-weight: 600
+    color: #2A2E30
+    margin: 0 0 4px
+  .mail
+    font-family: $font
+    color: #0B0C0D
+    margin: auto 0 0
+  &__icon
+    margin: 0 auto 16px
+    width: 162px
+    height: 162px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%,0)
+      border-radius: 50%
+      background: radial-gradient(60.21% 60.21% at 103.17% 72.54%, #5AED78 0%, rgba(90, 237, 120, 0) 100%), radial-gradient(105.43% 62.68% at 24.3% 93.66%, #249DDF 10.14%, rgba(36, 157, 223, 0) 100%), radial-gradient(34.78% 197.59% at 18.21% -5.43%, #ED3751 0%, rgba(237, 55, 81, 0) 100%), #ED6D43
+      width: 142px
+      height: 142px
+      box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.25)
+    img
+      position: relative
+
+.contacts-box__body
+  margin: 0 0 24px
+
+.position
+  color: #6C757D
+  font-weight: bold
+  font-feature-settings: 'ordn' on
