@@ -13,29 +13,29 @@
     -moz-box-sizing: border-box
     box-sizing: border-box
 
-*::-webkit-input-placeholder
-  color: #666
-  opacity: 1
-
-*:-moz-placeholder
-  color: #666
-  opacity: 1
-
-*::-moz-placeholder
-  color: #666
-  opacity: 1
-
-*:-ms-input-placeholder
-  color: #666
-  opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-  color: #666
-
-body input:required:valid,
-body textarea:required:valid
-  color: #666
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -180,12 +180,56 @@ label
     background: rgba(255, 255, 255, 0.5)
     color: #F8F9FA
 
+.btn-border-accent
+  border: 1px solid #ED6D43
+    radius: 4px
+  color: #ED6D43
+  background: transparent
+  padding: 7px 10.5px
+
+  &:hover
+    background: $accent
+    color: #fff
+
 .btn-primary
   background: $accent
   color: #fff
   &:hover
     background: $red
 
+.btn-primary.disabled, .btn-primary:disabled
+  background: #FAC7AC
+  border: none
+
+.btn-blue
+  background: #1877F2
+  border-radius: 4px
+  color: #fff
+  padding: 8px 12px
+  .svg-icon
+    fill: #1877F2
+  &:hover
+    background: $accent
+    color: #fff
+    .svg-icon
+      fill: $accent
+
+.btn-social__icon
+  margin: 0 6px 0 0
+  width: 20px
+  height: 20px
+  background: #fff
+  border-radius: 50%
+  display: flex
+  align-items: flex-end
+  justify-content: center
+  .svg-icon
+    width: 8px
+    height: 16px
+
+.btn-social
+  width: 100%
+  justify-content: center
 
 .btn-group
   .btn
@@ -269,6 +313,9 @@ h2
 
 .mb-32
   margin: 0 0 32px
+
+.mb-30
+  margin-bottom: 30px
 
 .container
   position: relative
@@ -382,8 +429,77 @@ h2
   strong
     font-weight: bold
 
-.mb-30
-  margin-bottom: 30px
+.links-accent
+  color: $accent
+  font-weight: 500
+  &:hover
+    color: $graphite
+
+//form
+.form
+  button
+    padding: 8px 12px
+    margin: 0
+    font-size: 16px
+  .btn-group .btn:not(:last-child):not(.dropdown-toggle)
+    margin: 0
+  .btn-group
+    align-items: center
+    justify-content: space-between
+    width: 100%
+  label
+    margin: 0 0 24px
+
+
+.input-title
+  width: 100%
+  display: block
+  margin: 0 0 4px
+  font-weight: 500
+  color: #6C757D
+  font-feature-settings: 'pnum' on, 'lnum' on
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+  color: #6C757D
+  font-family: $font
+  cursor: pointer
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  width: 13px
+  height: 13px
+  min-width: 13px
+  margin: 0 8px 0 0
+  background: #F7F8FA
+  border: 1px solid #EBEEF2
+    radius: 2px
+  position: relative
+  transition: .3s ease
+  &:before
+    content: ''
+    position: absolute
+    width: 7.5px
+    height: 6px
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+    background: url("../img/checkbox.svg") no-repeat center
+      size: contain
+    opacity: 0
+
+.checkbox-inp:checked + .checkbox-custom
+  background: $accent
+  border-color: $accent
+  &:before
+    opacity: 1
+
+
 
 
 @import "header"
@@ -392,5 +508,6 @@ h2
 @import "about"
 @import "clients"
 @import "contacts"
+@import "modal"
 @import "media"
 // Всегда в конце
