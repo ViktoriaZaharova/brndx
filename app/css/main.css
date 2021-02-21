@@ -392,15 +392,26 @@ h2 {
 .breadcrumb-item a {
   color: #ED6D43; }
 
+.breadcrumb-item:before {
+  display: none; }
+
+.breadcrumb-item:after {
+  content: '/';
+  display: inline-block;
+  margin: 0 8px;
+  color: #EBEEF2; }
+
+.breadcrumb-item:last-child:after {
+  display: none; }
+
 .breadcrumb-item.active {
   color: #6C757D; }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 8px; }
+  padding: 0; }
 
 .breadcrumb-item + .breadcrumb-item::before {
-  color: #EBEEF2;
-  padding-right: 8px; }
+  display: none; }
 
 .bg-beige {
   background: #FFF9F5; }
@@ -1840,6 +1851,53 @@ footer {
     stroke: #6C757D;
     fill: none; }
 
+.total-questionnaire {
+  margin: 12px 0 32px;
+  color: #6C757D;
+  font-family: "Inter", sans-serif;
+  font-size: 12.8px; }
+
+.result-test-box {
+  height: 100%;
+  border: 1px solid #EBEEF2;
+    border-radius: 8px;
+  padding: 16px;
+  color: #0B0C0D;
+  font-weight: 600;
+  line-height: 24px; }
+  .result-test-box__top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 4px; }
+  .result-test-box__percent {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ED6D43;
+    line-height: 47px;
+    letter-spacing: -2px; }
+
+.result-test {
+  margin: 32px 0; }
+
+.project-page-result .product-description-box__body p {
+  margin: 0 0 16px; }
+  .project-page-result .product-description-box__body p:last-child {
+    margin: 0; }
+
+.project-page-result .product-description-box h3 {
+  margin: 0 0 32px; }
+
+.project-page-result .quote {
+  margin: auto; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2161,7 +2219,16 @@ footer {
   .product-description-box-max .mb-154 {
     margin-bottom: 0; }
   .quote {
-    margin: 32px auto; } }
+    margin: 32px auto; }
+  .result-test-box {
+    height: auto;
+    margin: 0 0 30px; }
+  .total-questionnaire {
+    margin: 0 0 32px; }
+  .project-page-result .product-description-box__img {
+    margin: 0; }
+  .project-page-result .quote {
+    margin: 0 0 32px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

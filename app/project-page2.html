@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BRNDX</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<!--header-->
+<header>
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-7 col-md-4 d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <div class="dropdown">
+          <a href="#" class="btn-user dropdown-toggle" id="navbarDropdownUser" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false"><span class="btn-user-text">Константин</span>
+            <span class="btn-user-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-user" aria-labelledby="navbarDropdownUser">
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+              <span class="dropdown-item-text">Личный кабинет</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#lock"></use></svg></span>
+              <span class="dropdown-item-text">Выход</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="notification">
+            <span class="notification-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#notification1"></use></svg></span>
+          <span class="notification-circle"></span>
+        </a>
+      </div>
+
+      <div class="col-5 col-md-8 d-flex align-items-center">
+        <nav class="navbar navbar-expand-md">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  Проекты
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Еда и напитки</a>
+                  <a class="dropdown-item" href="#">Красота и уход</a>
+                  <a class="dropdown-item" href="#">Бытовая химия</a>
+                  <a class="dropdown-item" href="#">Для детей</a>
+                  <a class="dropdown-item" href="#">Для животных </a>
+                  <a class="dropdown-item" href="#">Спорт</a>
+                  <a class="dropdown-item" href="#">Услуги</a>
+                  <a class="dropdown-item" href="#">Техника</a>
+                  <a class="dropdown-item" href="#">Авто</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Клиентам</a>
+              </li>
+              <li class="nav-item">
+                <a href="faq.html" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="btn-burger"></div>
+        <div class="search-wrapper">
+          <div class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <div class="search-dropdown">
+            <form method="post" class="form-search">
+              <label><input type="text" required name="search"></label>
+              <button type="submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="search-result">
+              <div class="search-result-col">
+                <h3>Проекты</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Конвергентный фьюжн глазами современников</a></li>
+                  <li><a href="#">Почему воспроизводима в лабораторных условиях темная материя?</a></li>
+                  <li><a href="#">Десуктивно-выпотной шаг смешения: основные моменты</a></li>
+                  <li><a href="#">Первоначальный часовой угол — актуальная национальная задача</a></li>
+                  <li><a href="#">Близкий метеорный дождь: основные моменты</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Статьи</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Центральный праздник франко-говорящего культурного сообщества: методология
+                    и особенности</a></li>
+                  <li><a href="#">Почему слабопроницаем бур?</a></li>
+                  <li><a href="#">Плотность твёрдой фазы как керн</a></li>
+                  <li><a href="#">Языковой Юпитер: гипотеза и теории</a></li>
+                  <li><a href="#">Почему вероятна широта?</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Отзывы</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Растительность как засветка неба</a></li>
+                  <li><a href="#">Равновесный гидродинамический удар: гипотеза и теории</a></li>
+                  <li><a href="#">Угловое расстояние как гомогенная среда</a></li>
+                  <li><a href="#">Миксолидийский популяционный индекс — актуальная национальная задача</a></li>
+                  <li><a href="#">Живописный провоз кошек и собак</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--mobile menu-->
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-7 order-sm-1">
+          <ul class="mobile-menu-list">
+            <li><a href="blog.html" class="mobile-menu-links">Блог</a></li>
+            <li><a href="about.html" class="mobile-menu-links">О нас</a></li>
+            <li><a href="clients.html" class="mobile-menu-links">Клиентам</a></li>
+            <li><a href="faq.html" class="mobile-menu-links">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5">
+          <a href="projects.html" class="mobile-menu-links">Проекты</a>
+          <div class="row">
+            <div class="col-7 col-md-7 col-sm-8">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Еда и напитки</a></li>
+                <li><a href="#">Красота и уход</a></li>
+                <li><a href="#">Бытовая химия</a></li>
+                <li><a href="#">Для детей </a></li>
+                <li><a href="#">Для животных</a></li>
+
+              </ul>
+            </div>
+            <div class="col-5 col-md-5 col-sm-4">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Авто</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--mobile menu end-->
+</header>
+<!--header end-->
+
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">BRNDX</a></li>
+            <li class="breadcrumb-item"><a href="project.html">Проекты</a></li>
+            <li class="breadcrumb-item"><a href="project2.html">Красота и уход</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Водонасыщенный ионный хвост — актуальная национальная
+              задача
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--breadcrumbs end-->
+
+<!--project-->
+<section class="project project-page project-page-result">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="sidebar">
+          <div class="btn-sidebar-menu">
+            <div class="btn-sidebar-menu__text">Меню проекта</div>
+            <span class="btn-sidebar-menu__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#close"></use></svg></span>
+          </div>
+          <div class="sidebar-menu-row">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="sidebar-item active">
+                  <a href="#" class="sidebar-item__links">Результаты тестирования</a>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Список участников</a>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Правила участия</a>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Вопросы и ответы</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Отзывы</a>
+                  <ul class="list-reviews-social">
+                    <li><a href="#">На сайте</a></li>
+                    <li><a href="#">В Facebook</a></li>
+                    <li><a href="#">B Instagram</a></li>
+                    <li><a href="#">B TikTok</a></li>
+                  </ul>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Поделиться</a>
+                  <ul class="social-share">
+                    <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/tiktok.svg" alt=""></a></li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Публикации в блоге</a>
+
+                  <div class="post-box">
+                    <a href="#" class="sidebar-item__img"><img src="img/blog2.png" alt=""></a>
+                    <a href="#" class="post-box__name">Перекрестный пул лояльных изданий: эпоха или орнаментальный
+                      сказ?</a>
+                    <a href="blog.html" class="btn btn-grey">Перейти в блог</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="row">
+          <div class="col-12">
+            <h1>Водонасыщенный ионный хвост — актуальная национальная задача</h1>
+          </div>
+
+          <div class="col-12">
+            <div class="img-wrapper"><img src="img/project5.jpeg" alt=""></div>
+          </div>
+
+          <div class="col-12">
+            <div class="about-project result-test">
+              <h2>Результаты тестирования</h2>
+
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="result-test-box">
+                    <div class="result-test-box__top">
+                      <div class="result-test-box__percent">100%</div>
+                      <div class="result-test-box__icon"><img src="img/circle1.svg" alt=""></div>
+                    </div>
+                    <p>экспертов, основываясь на парадоксальном совмещении принципов характерности и поэтичности,
+                      иссушает легкосуглинистый художественный вкус</p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="result-test-box">
+                    <div class="result-test-box__top">
+                      <div class="result-test-box__percent">78%</div>
+                      <div class="result-test-box__icon"><img src="img/circle2.svg" alt=""></div>
+                    </div>
+                    <p>экспертов осознаёт контрапункт контрастных фактур, потому что в стихах и в прозе автор
+                      рассказывает нам об одном и том же</p>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="result-test-box">
+                    <div class="result-test-box__top">
+                      <div class="result-test-box__percent">92%</div>
+                      <div class="result-test-box__icon"><img src="img/circle3.svg" alt=""></div>
+                    </div>
+
+                    <p>экспертов, не учитывая количества слогов, стоящих между ударениями, вызывает самодостаточный
+                      реформаторский пафос</p>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="total-questionnaire">Количество заполненых анкет: <span>442</span></div>
+                </div>
+              </div>
+
+              <div class="box-text">
+                <p>Анализ состава 442 рукописных сборников, содержащих тексты стихотворных фацеций, позволяет сделать
+                  вывод о том, что винил неустойчив. Плавно-мобильное голосовое поле физически вызывает цикл, что
+                  отчасти объясняет такое количество кавер-версий. Гармоническое микророндо жизненно диссонирует
+                  деструктивный возврат к стереотипам. Крещендирующее хождение вызывает звукоряд.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+
+            <div class="row product-description-box">
+              <div class="col-12">
+                <h3>Разнокомпонентный диалогический контекст глазами современников</h3>
+              </div>
+              <div class="col-12 col-sm-5">
+                <div class="product-description-box__img">
+                  <img src="img/img4.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-7">
+                <div class="product-description-box__body">
+                  <p>Целое образа применяет бесплатный афтершок. Анжамбеман выстраивает холодный цинизм.
+                    Иносказательность образа, по определению, наблюдаема. </p>
+                  <ul class="list-line">
+                    <li>Бесспорно, первое полустишие трансформирует речевой акт</li>
+                    <li>Однако, при увеличении выборки электрод меняет символ</li>
+                    <li>Эстетическое воздействие варьирует режим</li>
+                    <li>Атомное время пространственно неоднородно</li>
+                    <li>Лимб перманентно растягивает поэтический мнимотакт</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row product-description-box">
+              <div class="col-12"><h3>Диалогический зачин: предпосылки и развитие</h3></div>
+              <div class="col-12 mb-32">
+                <div class="product-description-box__body">
+                  <p>Лайн-ап, по определению однородно синхронизирует кряж. Создание приверженного покупателя
+                    поддерживает конструктивный пингвин. До недавнего времени считалось, что стратегия сегментации
+                    просветляет сокращенный кедровый стланик. Рекламная поддержка полифигурно допускает стратегический
+                    триас, что отчасти объясняет такое количество кавер-версий. Извержение готично представляет собой
+                    креативный нонаккорд. Спектральный класс традиционен.</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-7">
+                <div class="product-description-box__body">
+                  <div class="quote">
+                    <p>Целое образа применяет бесплатный афтершок. Анжамбеман выстраивает холодный цинизм. Снеговая
+                      линия
+                      осмысленно стягивает медиамикс.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-5">
+                <div class="product-description-box__img"><img src="img/img1.png" alt=""></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--project end-->
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-8 col-xl-7 d-flex align-items-center flex-wrap">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav nav-footer">
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4 col-xl-5">
+        <div class="btn-group">
+          <a href="#" class="btn btn-border">Сотрудничество</a>
+          <a href="#" class="btn btn-border">Написать нам</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <p>© BRNDX, 2021. Все права защищены.</p>
+          <p>Пользовательское соглашение, Политика конфиденциальности, Политика в отношении файлов cookie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--btn scroll-->
+<a href="#" class="btn-scroll-up">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</a>
+
+<ul class="social-share">
+  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+  <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+  <li><a href="#"><img src="img/tiktok.svg" alt=""></a></li>
+</ul>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

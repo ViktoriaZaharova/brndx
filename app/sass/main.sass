@@ -406,16 +406,25 @@ h2
 .breadcrumb-item
   a
     color: #ED6D43
+  &:before
+    display: none
+  &:after
+    content: '/'
+    display: inline-block
+    margin: 0 8px
+    color: #EBEEF2
+  &:last-child
+    &:after
+      display: none
 
 .breadcrumb-item.active
   color: #6C757D
 
 .breadcrumb-item+.breadcrumb-item
-  padding-left: 8px
+  padding: 0
 
 .breadcrumb-item+.breadcrumb-item::before
-  color: #EBEEF2
-  padding-right: 8px
+  display: none
 
 .bg-beige
   background: #FFF9F5
