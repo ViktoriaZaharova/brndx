@@ -52,3 +52,7 @@ $('.btn-load').on('click', function (e) {
     $('.project-col:hidden').slice(0, 4).slideDown();
 });
 
+$('.btn-sidebar-menu').on('click', function () {
+   $('.sidebar-menu-row').fadeToggle();
+});
+
