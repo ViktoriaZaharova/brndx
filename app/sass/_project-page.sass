@@ -238,4 +238,89 @@
     margin: auto
 
 
+.participation-rules
+  margin: 32px 0 0
+  color: #6C757D
+  .box-text
+    font-size: 16px
+    line-height: 24px
+    color: #6C757D
+
+  h3
+    margin: 0 0 24px
+    color: #2A2E30
+    font-weight: 600
+    font-size: 28px
+
+
+
+.list-number
+  counter-reset: item
+  margin: 32px 0 0
+  font-size: 16px
+  line-height: 24px
+  width: 100%
+  .box-text
+    font-family: $font
+    font-size: 16px
+    line-height: 24px
+    color: #6C757D
+  > li
+    width: 100%
+    display: inline-block
+    position: relative
+    margin: 0 0 32px
+    &:last-child
+      margin: 0
+    h4
+      font-size: 24px
+      font-weight: 600
+      margin: 0 0 16px
+      color: #2A2E30
+      position: relative
+      display: flex
+      align-items: flex-start
+      &:before
+        content: counters(item, ".") ". "
+        display: inline-block
+        counter-increment: item
+        margin: 0 15px 0 0
+    h5
+      font-size: 20px
+      font-weight: 600
+      color: #2A2E30
+      position: relative
+      display: flex
+      align-items: flex-start
+      margin: 0 0 8px
+      &:before
+        content: counters(item, ".") ". "
+        display: inline-block
+        counter-increment: item
+        margin: 0 15px 0 0
+    h6
+      margin: 0 0 8px
+      position: relative
+      display: flex
+      align-items: flex-start
+      font-weight: 700
+      color: #2A2E30
+      &:before
+        content: counters(item, ".") ". "
+        display: inline-block
+        counter-increment: item
+        margin: 0 15px 0 0
+    ul
+      margin: 24px 0 0
+      counter-reset: item
+      padding: 0 0 0 35px
+      li
+        margin: 0 0 24px
+        width: 100%
+        display: inline-block
+        position: relative
+        &:last-child
+          margin: 0
+
+
 
