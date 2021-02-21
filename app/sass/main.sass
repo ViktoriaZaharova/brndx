@@ -231,6 +231,13 @@ label
   width: 100%
   justify-content: center
 
+.btn-grey
+  background: #4B5257
+  color: #fff
+  &:hover
+    color: #fff
+    background: $accent
+
 .btn-group
   .btn
     flex: none
@@ -384,6 +391,7 @@ h2
 //.breadcrumbs
 .breadcrumbs
   padding: 16px 0
+  margin: 0 0 32px
   border-bottom: 1px solid #EBEEF2
 
 .breadcrumb
@@ -501,8 +509,33 @@ h2
   &:before
     opacity: 1
 
+.list-category-project
+  li
+    margin: 0 0 12px
+    &:last-child
+      margin: 0
+    a
+      width: fit-content
+      padding: 5px 11px
+      color: #4B5257
+      font-size: 16px
+      line-height: 24px
+      font-weight: 500
+      font-feature-settings: 'pnum' on, 'lnum' on
+      border: 1px solid #EBEEF2
+        radius: 300px
+      &:hover
+        background: $accent
+        color: #fff
+        border-color: $accent
+  .active
+    a
+      background: #EBEEF2
+      border: 1px solid #EBEEF2
+      color: #0B0C0D
 
-
+.btn-load
+  margin: 16px auto 0
 
 @import "header"
 @import "home"
@@ -511,5 +544,6 @@ h2
 @import "clients"
 @import "contacts"
 @import "modal"
+@import "project"
 @import "media"
 // Всегда в конце

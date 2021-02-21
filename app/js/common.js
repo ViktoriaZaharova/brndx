@@ -38,3 +38,17 @@ $('.btn-burger').on('click', function () {
     $(this).toggleClass('click');
    $('.mobile-menu').fadeToggle();
 });
+
+// btn load
+$('.project-row').each(function () {
+    if ($(this).find('.project-col').length > 10) {
+        $(this).find('.project-col').slice(10).hide();
+    }
+
+});
+
+$('.btn-load').on('click', function (e) {
+    e.preventDefault();
+    $('.project-col:hidden').slice(0, 4).slideDown();
+});
+
