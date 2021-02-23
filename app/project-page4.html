@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BRNDX</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<!--header-->
+<header>
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-7 col-md-4 d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <div class="dropdown">
+          <a href="#" class="btn-user dropdown-toggle" id="navbarDropdownUser" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false"><span class="btn-user-text">Константин</span>
+            <span class="btn-user-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-user" aria-labelledby="navbarDropdownUser">
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+              <span class="dropdown-item-text">Личный кабинет</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#lock"></use></svg></span>
+              <span class="dropdown-item-text">Выход</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="notification">
+            <span class="notification-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#notification1"></use></svg></span>
+          <span class="notification-circle"></span>
+        </a>
+      </div>
+
+      <div class="col-5 col-md-8 d-flex align-items-center">
+        <nav class="navbar navbar-expand-md">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  Проекты
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Еда и напитки</a>
+                  <a class="dropdown-item" href="#">Красота и уход</a>
+                  <a class="dropdown-item" href="#">Бытовая химия</a>
+                  <a class="dropdown-item" href="#">Для детей</a>
+                  <a class="dropdown-item" href="#">Для животных </a>
+                  <a class="dropdown-item" href="#">Спорт</a>
+                  <a class="dropdown-item" href="#">Услуги</a>
+                  <a class="dropdown-item" href="#">Техника</a>
+                  <a class="dropdown-item" href="#">Авто</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Клиентам</a>
+              </li>
+              <li class="nav-item">
+                <a href="faq.html" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="btn-burger"></div>
+        <div class="search-wrapper">
+          <div class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <div class="search-dropdown">
+            <form method="post" class="form-search">
+              <label><input type="text" required name="search"></label>
+              <button type="submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="search-result">
+              <div class="search-result-col">
+                <h3>Проекты</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Конвергентный фьюжн глазами современников</a></li>
+                  <li><a href="#">Почему воспроизводима в лабораторных условиях темная материя?</a></li>
+                  <li><a href="#">Десуктивно-выпотной шаг смешения: основные моменты</a></li>
+                  <li><a href="#">Первоначальный часовой угол — актуальная национальная задача</a></li>
+                  <li><a href="#">Близкий метеорный дождь: основные моменты</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Статьи</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Центральный праздник франко-говорящего культурного сообщества: методология
+                    и особенности</a></li>
+                  <li><a href="#">Почему слабопроницаем бур?</a></li>
+                  <li><a href="#">Плотность твёрдой фазы как керн</a></li>
+                  <li><a href="#">Языковой Юпитер: гипотеза и теории</a></li>
+                  <li><a href="#">Почему вероятна широта?</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Отзывы</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Растительность как засветка неба</a></li>
+                  <li><a href="#">Равновесный гидродинамический удар: гипотеза и теории</a></li>
+                  <li><a href="#">Угловое расстояние как гомогенная среда</a></li>
+                  <li><a href="#">Миксолидийский популяционный индекс — актуальная национальная задача</a></li>
+                  <li><a href="#">Живописный провоз кошек и собак</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--mobile menu-->
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-7 order-sm-1">
+          <ul class="mobile-menu-list">
+            <li><a href="blog.html" class="mobile-menu-links">Блог</a></li>
+            <li><a href="about.html" class="mobile-menu-links">О нас</a></li>
+            <li><a href="clients.html" class="mobile-menu-links">Клиентам</a></li>
+            <li><a href="faq.html" class="mobile-menu-links">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5">
+          <a href="projects.html" class="mobile-menu-links">Проекты</a>
+          <div class="row">
+            <div class="col-7 col-md-7 col-sm-8">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Еда и напитки</a></li>
+                <li><a href="#">Красота и уход</a></li>
+                <li><a href="#">Бытовая химия</a></li>
+                <li><a href="#">Для детей </a></li>
+                <li><a href="#">Для животных</a></li>
+
+              </ul>
+            </div>
+            <div class="col-5 col-md-5 col-sm-4">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Авто</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--mobile menu end-->
+</header>
+<!--header end-->
+
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">BRNDX</a></li>
+            <li class="breadcrumb-item"><a href="project.html">Проекты</a></li>
+            <li class="breadcrumb-item"><a href="project2.html">Красота и уход</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Глубокий образ: методология и особенности</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--breadcrumbs end-->
+
+<!--project-->
+<section class="project project-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="sidebar">
+          <div class="btn-sidebar-menu">
+            <div class="btn-sidebar-menu__text">Меню проекта</div>
+            <span class="btn-sidebar-menu__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
+          </div>
+          <div class="sidebar-menu-row">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="sidebar-item active">
+                  <a href="#" class="sidebar-item__links">О проекте</a>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Заполнение отчета</a>
+
+                  <div class="sidebar-item__body">
+                    <div class="report"><p>21.12.20 –– 03.01.21</p> <a href="#" class="btn btn-primary">Заполнить</a></div>
+                  </div>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Список участников</a>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Правила участия</a>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Вопросы и ответы</a>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-12">
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Отзывы</a>
+                  <ul class="list-reviews-social">
+                    <li><a href="#">На сайте</a></li>
+                    <li><a href="#">В Facebook</a></li>
+                    <li><a href="#">B Instagram</a></li>
+                    <li><a href="#">B TikTok</a></li>
+                  </ul>
+                </div>
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Поделиться</a>
+                  <ul class="social-share">
+                    <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/tiktok.svg" alt=""></a></li>
+                  </ul>
+                </div>
+
+                <div class="sidebar-item">
+                  <a href="#" class="sidebar-item__links">Публикации в блоге</a>
+
+                  <div class="post-box">
+                    <a href="#" class="sidebar-item__img"><img src="img/blog1.png" alt=""></a>
+                    <a href="#" class="post-box__name">Перекрестный пул лояльных изданий: эпоха или орнаментальный сказ?</a>
+                    <a href="blog.html" class="btn btn-grey">Перейти в блог</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <div class="row">
+          <div class="col-12">
+            <h1>Глубокий образ: методология и особенности</h1>
+          </div>
+
+          <div class="col-12">
+            <div class="img-wrapper"><img src="img/project1.jpeg" alt=""></div>
+          </div>
+
+          <div class="col-12">
+            <div class="about-project list-of-participants">
+              <h2>Список участников</h2>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="scroll-wrapper">
+              <ul class="list-alphabet">
+                <li><a href="#">#</a></li>
+                <li><a href="#">0–9</a></li>
+                <li><a href="#" class="active">A</a></li>
+                <li><a href="#">б</a></li>
+                <li><a href="#">в</a></li>
+                <li><a href="#">г</a></li>
+                <li><a href="#">д</a></li>
+                <li><a href="#">е</a></li>
+                <li><a href="#">ж</a></li>
+                <li><a href="#">з</a></li>
+                <li><a href="#">и</a></li>
+                <li><a href="#">й</a></li>
+                <li><a href="#">к</a></li>
+                <li><a href="#">л</a></li>
+                <li><a href="#">м</a></li>
+                <li><a href="#">н</a></li>
+                <li><a href="#">о</a></li>
+                <li><a href="#">п</a></li>
+                <li><a href="#">р</a></li>
+                <li><a href="#">с</a></li>
+                <li><a href="#">т</a></li>
+                <li><a href="#">у</a></li>
+                <li><a href="#">ф</a></li>
+                <li><a href="#">х</a></li>
+                <li><a href="#">ц</a></li>
+                <li><a href="#">ч</a></li>
+                <li><a href="#">ш</a></li>
+                <li><a href="#">щ</a></li>
+                <li><a href="#">ы</a></li>
+                <li><a href="#">э</a></li>
+                <li><a href="#">ю</a></li>
+                <li><a href="#">я</a></li>
+                <li><a href="#">a</a></li>
+                <li><a href="#">b</a></li>
+                <li><a href="#">c</a></li>
+                <li><a href="#">d</a></li>
+                <li><a href="#">e</a></li>
+                <li><a href="#">f</a></li>
+                <li><a href="#">g</a></li>
+                <li><a href="#">h</a></li>
+                <li><a href="#">i</a></li>
+                <li><a href="#">k</a></li>
+                <li><a href="#">l</a></li>
+                <li><a href="#">m</a></li>
+                <li><a href="#">n</a></li>
+                <li><a href="#">o</a></li>
+                <li><a href="#">p</a></li>
+                <li><a href="#">r</a></li>
+                <li><a href="#">s</a></li>
+                <li><a href="#">t</a></li>
+                <li><a href="#">u</a></li>
+                <li><a href="#">v</a></li>
+                <li><a href="#">w</a></li>
+                <li><a href="#">x</a></li>
+                <li><a href="#">y</a></li>
+                <li><a href="#">z</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="section-letters">
+              <h3 class="section-letters__title">A</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user1.png" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Даниил Александров</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user2.png" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Кристина Алешина</h4>
+                      <div class="position-user">Знаток</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user3.png" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Нина Амосова</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo section-letters__box-photo-default"><img src="img/union.svg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Светлана Антонова</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user4.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Михаил Афанасьев</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user5.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Римма Ашихмина</h4>
+                      <div class="position-user">Знаток</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-letters">
+              <h3 class="section-letters__title">Б</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user6.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Татьяна Болдырева</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user7.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Марина Борисова</h4>
+                      <div class="position-user">Знаток</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-letters">
+              <h3 class="section-letters__title">В</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user8.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Николай Васильев</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-letters">
+              <h3 class="section-letters__title">Г</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user9.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Всеволод <br>Габдул-Валеев</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo section-letters__box-photo-default"><img src="img/union.svg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Наталья Габринец</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user10.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Гедеванишвили Маргарита</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user11.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Антонина Главщикова</h4>
+                      <div class="position-user">Знаток</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user12.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Екатерина Говорушкина</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user13.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Кирилл Губачевский</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user14.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Игорь Гущин</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-letters">
+              <h3 class="section-letters__title">Д</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user15.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Альбина Давлетьярова </h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo section-letters__box-photo-default"><img src="img/union.svg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Олег Дубовик</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-letters">
+              <h3 class="section-letters__title">Е</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user16.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Антон Евдокимкин</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user17.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Анна Егоршина</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user18.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Ольга Ежинская</h4>
+                      <div class="position-user">Знаток</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user19.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Родион Ерков</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user20.png" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Анастасия Ефимцева</h4>
+                      <div class="position-user">Новичок</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-letters">
+              <h3 class="section-letters__title">Ж</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo section-letters__box-photo-default"><img src="img/union.svg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Валерий Жадаев</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user21.png" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Алена Жуделкина</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-letters">
+              <h3 class="section-letters__title">З</h3>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user22.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Петр Забалканский</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user23.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Сергей Зизичкин</h4>
+                      <div class="position-user">Опытный эксперт</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <div class="section-letters__box">
+                    <div class="section-letters__box-photo"><img src="img/user24.jpeg" alt=""></div>
+                    <div class="section-letters__box-content">
+                      <h4>Варвара Зятькова</h4>
+                      <div class="position-user">Эксперт</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--project end-->
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-8 col-xl-7 d-flex align-items-center flex-wrap">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav nav-footer">
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4 col-xl-5">
+        <div class="btn-group">
+          <a href="#" class="btn btn-border">Сотрудничество</a>
+          <a href="#" class="btn btn-border">Написать нам</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <p>© BRNDX, 2021. Все права защищены.</p>
+          <p>Пользовательское соглашение, Политика конфиденциальности, Политика в отношении файлов cookie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--btn scroll-->
+<a href="#" class="btn-scroll-up">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</a>
+
+<ul class="social-share">
+  <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+  <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+  <li><a href="#"><img src="img/tiktok.svg" alt=""></a></li>
+</ul>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -322,5 +322,93 @@
         &:last-child
           margin: 0
 
+.list-alphabet
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  text-transform: uppercase
+  font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on
+  font-family: $font
+  font-size: 12.8px
 
+  li
+    a
+      color: #6C757D
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        transform: translate(-50%,0)
+        width: 4px
+        height: 4px
+        border-radius: 50%
+        bottom: -4px
+    .active
+      color: #0B0C0D
+      &:before
+        background: #ED6D43
 
+.list-of-participants
+  margin: 32px 0
+
+.section-letters
+  margin: 32px 0 0
+
+.section-letters__title
+  width: 100%
+  position: relative
+  color: #CFD2D5
+  font-size: 56px
+  margin: 0 0 24px
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: calc(100% - 72px)
+    height: 1px
+    background: #EBEEF2
+
+.section-letters__box
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+
+.section-letters__box-photo
+  width: 64px
+  height: 64px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.section-letters__box-photo-default
+  background: #FCE1D0
+  border: 3px solid #FAC7AC
+  align-items: flex-end
+  img
+    height: auto
+    object-fit: contain
+    width: auto
+
+.section-letters__box-content
+  width: calc(100% - 64px)
+  padding: 0 0 0 12px
+  h4
+    font-feature-settings: 'ordn' on
+    font-weight: bold
+    color: #4B5257
+
+.position-user
+  font-size: 12.8px
+  font-family: $font
+  color: #6C757D
+  font-weight: 600
