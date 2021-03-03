@@ -2104,6 +2104,59 @@ footer {
   color: #6C757D;
   font-weight: 600; }
 
+.card {
+  border: none;
+    border-radius: 0;
+  padding: 24px 0;
+  border-bottom: 1px solid #EBEEF2; }
+  .card:last-child {
+    border: none; }
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 1px solid #EBEEF2; }
+
+.card-header {
+  padding: 0;
+  background: transparent;
+  border: none; }
+  .card-header .btn {
+    color: #2A2E30;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 0 45px;
+    line-height: 29px;
+    width: 100%;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    position: relative; }
+    .card-header .btn:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 24px;
+      height: 2px;
+      background: #ED6D43; }
+    .card-header .btn:hover, .card-header .btn:focus {
+      text-decoration: none; }
+  .card-header .collapsed:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    left: 11px;
+    top: 3px;
+    background: #ED6D43; }
+
+.card-body {
+  padding: 8px 0 0 45px;
+  color: #6C757D;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 16px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2274,7 +2327,9 @@ footer {
   .img-tablet {
     display: block; }
   .participation-rules {
-    margin: 32px 0 0; } }
+    margin: 32px 0 0; }
+  .list-of-participants {
+    margin: 32px 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 635px) {
