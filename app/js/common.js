@@ -55,3 +55,23 @@ $('.btn-sidebar-menu').on('click', function () {
    $('.sidebar-menu-row').fadeToggle();
 });
 
+// auto height textarea
+function autosize(){
+    let text = $('.form-add-comment textarea');
+
+    text.each(function(){
+        $(this).attr('rows',1);
+        resize($(this));
+    });
+
+    text.on('input', function(){
+        resize($(this));
+    });
+
+    function resize ($text) {
+        $text.css('height', 'auto');
+        $text.css('height', $text[0].scrollHeight+'px');
+    }
+}
+autosize();
+

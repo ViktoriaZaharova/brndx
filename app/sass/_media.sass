@@ -89,6 +89,8 @@
     .box-text
       margin: 16px 0 0
 
+  .comments-box-answer:after
+    left: -28px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -227,6 +229,9 @@
 
   .reviews-fb__iframe
     height: 321px
+
+  .comments-box-answer:after
+    left: -29px
 
 
 /* Extra Small Devices, Phones */
@@ -464,6 +469,54 @@
       margin: 0 auto 32px
       max-width: 288px
       width: 100%
+
+  .comments-box__body .box-text
+    font-size: 14px
+
+  .comments-box .reviews-box__avatar
+    width: 32px
+    height: 32px
+    min-width: 32px
+    margin: 0 8px 0 0
+
+  .comments-box-parent > .comments-box .reviews-box__avatar, .comments-box-answer .reviews-box__avatar
+    width: 24px
+    height: 24px
+    min-width: 24px
+
+  .comments-box:before
+    left: 16px
+
+  .comments-box__body
+    width: calc(100% - 30px)
+
+  .comment-timeline .comment-timeline .comment-timeline-item
+    padding: 0 0 0 32px
+
+  .comments-box-answer:after
+    width: 22px
+    height: 15px
+    left: -19px
+
+  .comments-box-answer:before
+    left: 12px
+
+  .comment-timeline .comment-timeline .comment-timeline .comment-timeline-item
+    padding: 0 0 0 28px
+
+  .comments-box-parent > .comment-timeline > li:before
+    left: 12px
+
+  .add-comment
+    padding: 16px
+
+  .comments-box-answer .comments-box__body
+    width: calc(100% - 20px)
+
+  .comments-box .section-letters__box-photo-default
+    border-width: 1px
+    img
+      max-width: 15px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px)
