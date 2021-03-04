@@ -2467,7 +2467,8 @@ footer {
         flex-wrap: wrap;
     border: none;
     margin: 32px 0;
-    padding: 0; }
+    padding: 0;
+    font-family: "Inter", sans-serif; }
     .reviews-box-details .reviews-box__body .box-text {
       color: #6C757D; }
       .reviews-box-details .reviews-box__body .box-text p {
@@ -2476,7 +2477,8 @@ footer {
           margin: 0; }
   .reviews-box-details .reviews-box__img {
     margin: 24px auto;
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
     height: 540px; }
 
 .add-comment {
@@ -2678,6 +2680,119 @@ footer {
       .comment-timeline .comment-timeline .comment-timeline .comment-timeline-item {
         padding: 0 0 0 48px; }
 
+.info-post {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 24px;
+  color: #B9BEC2;
+  font-size: 12.8px;
+  font-family: "Inter", sans-serif; }
+  .info-post a {
+    color: #6C757D;
+    font-weight: 600;
+    margin: 0 0 0 8px; }
+
+.project-category {
+  -webkit-font-feature-settings: 'ordn' on;
+          font-feature-settings: 'ordn' on;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #6C757D;
+  font-weight: bold; }
+  .project-category span {
+    color: #4B5257;
+    margin: 0 0 0 12px; }
+
+.blog-post h1 {
+  margin: 0 0 16px; }
+
+.blog-post .reviews-box-details .reviews-box__avatar {
+  width: 40px;
+  height: 40px;
+  min-width: 40px; }
+
+.blog-post .reviews-box-details .box-text {
+  margin: 0 0 32px; }
+  .blog-post .reviews-box-details .box-text:last-child {
+    margin: 0; }
+
+.blog-post .reviews-box-details h3 {
+  margin: 0 0 24px; }
+
+.blog-post__footer {
+  width: 100%;
+  padding: 16px 0;
+  border-top: 1px solid #EBEEF2; }
+
+.list-hashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: 500; }
+  .list-hashtag li {
+    margin: 0 16px 0 0; }
+    .list-hashtag li:last-child {
+      margin: 0; }
+    .list-hashtag li a {
+      color: #4B5257;
+      padding: 8px 0; }
+      .list-hashtag li a:hover {
+        color: #ED6D43; }
+
+.sidebar-box {
+  margin: 48px 0 0; }
+  .sidebar-box h3 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0B0C0D; }
+  .sidebar-box .list-hashtag {
+    font-size: 14px;
+    font-weight: 500; }
+    .sidebar-box .list-hashtag li {
+      margin: 0 8px 4px 0; }
+      .sidebar-box .list-hashtag li a {
+        padding: 6px 0; }
+  .sidebar-box .projects-card {
+    margin: 0 0 16px; }
+    .sidebar-box .projects-card:last-child {
+      margin: 0; }
+  .sidebar-box .projects-card__title {
+    font-size: 16px; }
+  .sidebar-box .reviews-box {
+    margin: 0 0 16px; }
+    .sidebar-box .reviews-box:last-child {
+      margin: 0; }
+  .sidebar-box .reviews-box__header {
+    padding: 16px 16px 8px; }
+  .sidebar-box .reviews-box__avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px; }
+  .sidebar-box .reviews-box__body {
+    padding: 8px 16px 16px; }
+    .sidebar-box .reviews-box__body h3 {
+      font-size: 16px;
+      margin: 0 0 8px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -2856,7 +2971,13 @@ footer {
   .reviews-fb__iframe {
     height: 321px; }
   .comments-box-answer:after {
-    left: -29px; } }
+    left: -29px; }
+  .sidebar .sidebar-box {
+    display: none; }
+  .sidebar-box {
+    margin: 0 0 32px; }
+    .sidebar-box:last-child {
+      margin: 0; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 635px) {
@@ -3092,7 +3213,10 @@ footer {
   .comments-box .section-letters__box-photo-default {
     border-width: 1px; }
     .comments-box .section-letters__box-photo-default img {
-      max-width: 15px; } }
+      max-width: 15px; }
+  .reviews-box-details .reviews-box__img {
+    max-width: 290px;
+    height: 290px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
