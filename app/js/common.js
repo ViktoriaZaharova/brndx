@@ -44,7 +44,6 @@ $('.project-row').each(function () {
     if ($(this).find('.project-col').length > 10) {
         $(this).find('.project-col').slice(10).hide();
     }
-
 });
 
 $('.btn-load').on('click', function (e) {

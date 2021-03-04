@@ -565,6 +565,8 @@
       display: flex
       align-items: center
       color: #7F7F7F
+      &:hover
+        color: $accent
 
 
 .link-social
@@ -573,3 +575,106 @@
   fill: #fff
   margin: 0 0 0 auto
 
+.reviews-sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 12px
+  .btn
+    padding: 8px 12px
+
+.select-dropdown-btn
+  padding: 10px 12px
+  background: #F8F9FA
+  border-radius: 4px
+  color: #4B5257
+  font-size: 16px
+  font-weight: 500
+
+//reviews-box
+.reviews-box
+  font-size: 16px
+  margin: 0 0 24px
+  border: 1px solid #EBEEF2
+    radius: 8px
+  background: #fff
+  overflow: hidden
+  .list-share
+    color: #4B5257
+    line-height: normal
+    font-weight: 500
+    font-size: 16px
+    justify-content: space-between
+    li
+      margin: 0
+  &__footer
+    padding: 16px 24px
+    background: #F7F8FA
+  &__body
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 16px 24px
+    color: #6C757D
+    h3
+      color: #4B5257
+      font-size: 24px
+      margin: 0 0 8px
+      font-weight: 600
+  .box-text
+    font-family: $font
+    font-weight: normal
+    font-size: 16px
+    line-height: normal
+  &__img
+    margin: 0 0 0 24px
+    width: 239px
+    height: 239px
+    min-width: 239px
+    border-radius: 4px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__header
+    display: flex
+    align-items: center
+    padding: 16px 24px
+    border-bottom: 1px solid #EBEEF2
+  &__avatar
+    width: 64px
+    height: 64px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    overflow: hidden
+    margin: 0 16px 0 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h4
+    font-weight: bold
+    color: #4B5257
+  .position-user
+    margin: 0 0 4px
+    color: #6C757D
+    font-family: $font
+    font-size: 12.8px
+    font-weight: 600
+  &__date
+    color: #B9BEC2
+    font-family: $font
+    font-size: 12.8px
+
+.read-more
+  margin: 14px 0 0
+  font-size: 14px
+  font-weight: 500
