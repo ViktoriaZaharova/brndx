@@ -494,21 +494,24 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   color: #6C757D;
   font-family: "Inter", sans-serif;
   cursor: pointer; }
+  .checkbox a {
+    color: #0B0C0D;
+    display: inline; }
 
-.checkbox-inp {
+.checkbox-inp, .radio-inp {
   display: none; }
 
 .checkbox-custom {
   width: 13px;
   height: 13px;
   min-width: 13px;
-  margin: 0 8px 0 0;
+  margin: 4px 8px 0 0;
   background: #F7F8FA;
   border: 1px solid #EBEEF2;
     border-radius: 2px;
@@ -535,6 +538,195 @@ h2 {
   border-color: #ED6D43; }
   .checkbox-inp:checked + .checkbox-custom:before {
     opacity: 1; }
+
+.radio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #6C757D;
+  font-weight: 500;
+  cursor: pointer; }
+
+.radio-custom {
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  background: #ffffff;
+  border: 1px solid #EBEEF2;
+    border-radius: 50%;
+  position: relative;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  margin: 0 8px 0 0; }
+
+.radio-inp:checked + .radio-custom {
+  background: #ED6D43;
+  border-color: #ED6D43; }
+
+.ui-widget.ui-widget-content {
+  padding: 16px;
+  border: none;
+    border-radius: 0;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: #fff; }
+
+.ui-datepicker {
+  width: auto; }
+  .ui-datepicker .ui-datepicker-header {
+    padding: 0;
+    background: transparent;
+    border: none;
+      border-radius: 0;
+    color: #6C757D;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    border: none;
+      border-radius: 0;
+    cursor: pointer; }
+    .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+      width: 9px;
+      height: 18px;
+      margin: 0;
+      position: relative;
+      left: 0;
+      top: 0;
+      right: 0;
+      -webkit-transform: none;
+              transform: none; }
+  .ui-datepicker .ui-datepicker-prev span {
+    background: url("../img/left.svg") no-repeat center;
+      background-size: contain; }
+  .ui-datepicker .ui-datepicker-next {
+    margin: 0 0 0 4px; }
+    .ui-datepicker .ui-datepicker-next span {
+      background: url("../img/right.svg") no-repeat center;
+        background-size: contain; }
+  .ui-datepicker .ui-datepicker-title {
+    margin: 0 auto 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .ui-datepicker .ui-datepicker-title select {
+      padding: 8px 28px 8px 12px;
+      margin: 0 4px 0 0;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      color: #6C757D;
+      font-family: "Inter", sans-serif;
+      background: #F7F8FA url("../img/select.svg") no-repeat 87% center;
+        background-size: 10px;
+      border-radius: 4px;
+      font-weight: normal; }
+      .ui-datepicker .ui-datepicker-title select:last-child {
+        margin: 0; }
+  .ui-datepicker th {
+    font-size: 12.8px;
+    color: #CFD2D5;
+    font-family: "Inter", sans-serif;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle; }
+  .ui-datepicker td {
+    padding: 0;
+    width: 40px;
+    height: 40px; }
+    .ui-datepicker td a, .ui-datepicker td span {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: none;
+  padding: 0;
+  background: transparent; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  color: #4B5257; }
+
+.ui-widget-content .ui-state-highlight:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #D64017;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  bottom: 3px; }
+
+.form-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .form-item .input-title {
+    width: auto;
+    margin: 0 16px 0 0; }
+
+.list-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-radio li {
+    margin: 0 16px 0 0; }
+    .list-radio li:last-child {
+      margin: 0; }
 
 .list-category-project li {
   margin: 0 0 12px; }
@@ -2882,6 +3074,85 @@ footer {
          object-fit: contain;
       height: auto; }
 
+.registration-box h3 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #0B0C0D; }
+
+.registration-box-icon {
+  max-width: 124px;
+  margin: 0 0 24px; }
+
+.registration-box .box-text {
+  color: #6C757D;
+  font-family: "Inter", sans-serif; }
+
+.registration-form {
+  width: 100%;
+  background: #F7F8FA;
+  border-radius: 8px;
+  padding: 24px; }
+  .registration-form .form-group {
+    width: 100%;
+    margin: 0 0 40px; }
+    .registration-form .form-group__title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      width: 100%;
+      margin: 0 0 24px;
+      color: #2A2E30;
+      font-size: 24px;
+      font-weight: 600; }
+    .registration-form .form-group__icon {
+      width: 29px;
+      min-width: 29px;
+      height: 29px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin: 0 12px 0 0; }
+  .registration-form input {
+    padding: 12px;
+    background: #fff; }
+  .registration-form label:last-child {
+    margin: 0; }
+  .registration-form .select {
+    width: 100%;
+    background: #FFFFFF url("../img/select.svg") no-repeat 95% center;
+      background-size: 10px;
+    color: #6C757D; }
+
+.label-date {
+  position: relative; }
+
+.input-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 16px;
+  height: 16px;
+  fill: #4B5257; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -3307,7 +3578,9 @@ footer {
       max-width: 15px; }
   .reviews-box-details .reviews-box__img {
     max-width: 290px;
-    height: 290px; } }
+    height: 290px; }
+  .registration-form {
+    padding: 15px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

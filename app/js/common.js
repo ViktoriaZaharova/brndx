@@ -40,12 +40,6 @@ $('.btn-burger').on('click', function () {
 });
 
 // btn load
-// $('.project-row').each(function () {
-//     if ($(this).find('.project-col').length > 10) {
-//         $(this).find('.project-col').slice(10).hide();
-//     }
-// });
-
 $('.btn-load').on('click', function (e) {
     e.preventDefault();
     $('.project-col:hidden').slice(0, 4).slideDown();
@@ -74,4 +68,31 @@ function autosize(){
     }
 }
 autosize();
+
+$.datepicker.setDefaults(
+    {
+        closeText: 'Закрыть',
+        prevText: '',
+        currentText: 'Сегодня',
+        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+            'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        monthNamesShort: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+            'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+        weekHeader: 'Не',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    });
+
+$( function() {
+    $( ".datepicker" ).datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
+} );
 
