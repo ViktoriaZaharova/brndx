@@ -112,6 +112,15 @@
   max-width: 315px
   width: 100%
 
+.project-col
+  display: none
+  &:nth-child(-n+10)
+    display: block
+
+.blog-col
+  &:nth-child(-n+20)
+    display: block
+
 .product-description-box__body
   height: 100%
   line-height: 24px
@@ -993,3 +1002,69 @@
     h3
       font-size: 16px
       margin: 0 0 8px
+      color: #4B5257
+
+//blog-card
+.blog-card
+  width: 100%
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15)
+  border-radius: 8px
+  background: #fff
+  overflow: hidden
+  height: 100%
+  &__img
+    width: 100%
+    height: 208px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    padding: 16px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    height: calc(100% - 208px)
+  .reviews-box__header
+    padding: 0
+    margin: 0 0 16px
+  .reviews-box__avatar
+    width: 40px
+    height: 40px
+    min-width: 40px
+  .info-post
+    margin: 0 0 8px
+  &__name
+    font-size: 20px
+    color: #4B5257
+    font-weight: 600
+    &:hover
+      color: $accent
+  &__content
+    margin: 0 0 8px
+  .reviews-box__footer
+    padding: 10px 0
+    background: transparent
+    margin: auto 0 0
+  .list-share
+    font-size: 16px
+    font-weight: 500
+    li a
+      color: #4B5257
+    .list-share__icon
+      width: 20px
+      height: 20px
+      fill: #6C757D
+  .section-letters__box-photo-default
+    border-width: 2px
+    align-items: flex-end
+    img
+      max-width: 25px
+      object-fit: contain
+      height: auto
+
+
