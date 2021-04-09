@@ -1,0 +1,476 @@
+@import "vars"
+
+.user-information
+  width: 100%
+
+.user-information__photo
+  border-radius: 50%
+  margin: 0 auto -40px
+  width: 120px
+  height: 120px
+  overflow: hidden
+  border: 3px solid #fff
+  position: relative
+  z-index: 1
+
+.user-information__body
+  padding: 40px 16px 24px
+  width: 100%
+  border-radius: 8px
+  background: #F7F8FA
+  text-align: center
+
+.user-name
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 4px auto 2px
+  font-size: 20px
+  font-weight: 600
+  &:before
+    content: ''
+    display: inline-block
+    margin: 0 4px 0 0
+    width: 26px
+    height: 24px
+    background: url("../img/element-title.svg") no-repeat center
+      size: contain
+
+.user-position
+  margin: 4px auto 0
+  color: #6C757D
+  font-size: 12.8px
+  font-family: $font
+  line-height: 19px
+  font-weight: 600
+
+.user-id
+  color: #6C757D
+  font-size: 12.8px
+  font-family: $font
+  margin: 4px auto
+  line-height: 19px
+  span
+    display: inline-block
+    font-weight: 600
+
+.user-rating
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-around
+  flex-wrap: wrap
+
+.user-rating-box
+  text-align: center
+  margin: 4px 0 0
+  span
+    display: inline-block
+    color: #6C757D
+    font-size: 12.8px
+    font-family: $font
+  p
+    font-size: 24px
+    font-weight: 600
+
+.user-rating-box__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  margin: 0 auto
+
+.nav-tabs
+  width: fit-content
+  flex-wrap: nowrap
+  margin: 0 0 4px
+  border: none
+    radius: 0
+    bottom: 1px solid #EBEEF2
+  .nav-item
+    margin: 0
+  .nav-link
+    padding: 8px 12px
+    color: #4B5257
+    font-size: 16px
+    border: none
+    position: relative
+    border-radius: 0
+    line-height: 24px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -1px
+      width: 100%
+      height: 1px
+  .nav-link.active
+    color: #0B0C0D
+    background: transparent
+    &:before
+      background: #6C757D
+
+.tab-content
+  padding: 60px 0 0
+  h3
+    width: 100%
+    margin: 0 0 32px
+    font-size: 40px
+    font-weight: 600
+  .registration-form
+    background: transparent
+    border-radius: 0
+    max-width: 540px
+    width: 100%
+    padding: 0
+    input
+      background: #F7F8FA
+      &::placeholder
+        color: #0B0C0D
+    .select
+      background: #F7F8FA url("../img/select.svg") no-repeat 95% center
+        size: 10px
+      color: #0B0C0D
+  .reviews-box__body h3
+    font-size: 24px
+    margin: 0 0 8px
+  .form-invite
+    input
+      background: #fff
+    
+
+.invite-friend
+  margin: 32px 0 0
+  width: 100%
+  background: #F7F8FA
+  border-radius: 8px
+  padding: 24px
+  h4
+    width: 100%
+    color: #2A2E30
+    font-size: 20px
+    font-weight: 600
+    margin: 0 0 8px
+  p
+    color: #6C757D
+    font-family: $font
+
+.form-invite
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 24px 0 0
+  label
+    width: calc(100% - 32px)
+    padding: 0 8px 0 0
+    display: flex
+    align-items: center
+    margin: 0
+  .input-title
+    width: auto
+  input
+    width: calc(100% - 64px)
+    margin: 0 0 0 auto
+    background: #fff
+    color: #6C757D
+
+
+.btn-copy
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #fff
+  width: 32px
+  height: 36px
+  background: #4B5257
+  padding: 8px
+  border-radius: 4px
+  &:hover
+    background: $accent
+
+.btn-bind
+  .btn-icon
+    width: 16px
+    height: 16px
+    fill: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 4px 0 0
+    .svg-icon
+      fill: #fff
+
+.settings-box
+  width: 100%
+  border: 1px solid #EBEEF2
+    radius: 8px
+  padding: 16px 16px 26px
+  height: 100%
+  .box-text
+    color: #6C757D
+    font-family: $font
+    line-height: 24px
+  h4
+    margin: 0 0 24px
+    color: #2A2E30
+    font-size: 24px
+    font-weight: 600
+  .btn
+    margin: 16px 0 0
+    padding: 6px 8px
+    font-size: 14px
+  .label-file
+    margin: 0 auto
+
+.form-settings
+  button
+    margin: 0 auto
+
+.list-dots
+  li
+    display: flex
+    align-items: flex-start
+    &:before
+      content: ''
+      display: inline-block
+      width: 12px
+      height: 12px
+      min-width: 12px
+      background: #6C757D
+      border-radius: 50%
+      margin: 8px 22px 0 0
+
+.box-avatar
+  margin: 0 auto 16px
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.input-file
+  display: none
+
+.label-file
+  margin: 0 auto
+
+.rating-scale-wrapper
+  width: 100%
+  position: relative
+  padding: 46px 0 48px
+
+.rating-marker
+  position: absolute
+  top: 0
+  right: 27%
+  display: flex
+  align-items: center
+  font-size: 12px
+  font-weight: bold
+  h5
+    color: #4B5257
+  p
+    color: #6C757D
+    font-family: $font
+    span
+      font-weight: normal
+      display: inline-block
+
+.rating-marker-photo
+  width: 32px
+  height: 46px
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  position: relative
+  background: url("../img/marker-photo.svg") no-repeat center
+    size: contain
+  margin: 0 8px 0 0
+  padding: 2px
+  .img
+    width: 28px
+    height: 28px
+    border: 1px solid #FFFFFF
+      radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+
+.rating-scale-stairs
+  width: 100%
+  display: flex
+  align-items: stretch
+  border-radius: 40px
+  color: #fff
+
+.rating-scale-stairs__step
+  padding: 8px 20px
+  font-feature-settings: 'ordn' on
+  font-weight: bold
+  flex: auto
+  line-height: 19px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  &:first-child
+    border-radius: 40px 0 0 40px
+  &:last-child
+    border-radius: 0 40px 40px 0
+
+.rating-scale-values__box
+  position: absolute
+  color: #6C757D
+  font-weight: bold
+  padding: 0 0 0 9px
+  top: 100%
+  left: -22.5px
+  margin: 4px 0 0
+  border-left: 1px solid #EBEEF2
+  span
+    display: inline-block
+    font-weight: normal
+    font-size: 12.8px
+    font-family: $font
+
+
+.rating-scale-stairs__step1, .rating-scale-stairs__elem1
+  background: #5AED78
+
+.rating-scale-stairs__step2
+  background: linear-gradient(90deg, #5AED78 0%, #249DDF 100%)
+
+.rating-scale-stairs__elem2
+  background: #249DDF
+
+.rating-scale-stairs__step3
+  background: linear-gradient(90deg, #249DDF 0.09%, #ED3751 100%)
+
+.rating-scale-stairs__elem3
+  background: #ED3751
+
+.rating-scale-stairs__step4
+  background: linear-gradient(90deg, #ED3751 0%, #ED6D43 100%)
+
+.rating-scale-stairs__elem4, .rating-scale-stairs__step5
+  background: #ED6D43
+
+
+.rating-scale-stairs__elem
+  padding: 0 16.75px
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  z-index: 1
+  width: 44.5px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    width: 1px
+    height: 100%
+    transform: translate(-50%,0)
+    background: rgba(255, 255, 255, 0.5)
+    z-index: -1
+
+.rating-scale-stairs__circle
+  width: 11px
+  height: 11px
+  background: #fff
+  border-radius: 50%
+
+.history-scores
+  margin: 32px 0 0
+  .btn
+    margin: 32px auto 0
+
+.list-scores
+  width: 100%
+  li
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    padding: 16px 0
+    color: #6C757D
+    font-family: $font
+    border:
+      bottom: 1px solid #EBEEF2
+    &:first-child
+      border-top: 1px solid #EBEEF2
+    span
+      font-size: 12.8px
+      font-weight: 600
+      text-align: right
+      white-space: nowrap
+      strong
+        font-family: $default-font
+        color: #2A2E30
+        font-weight: 600
+        font-size: 20px
+
+.box-responsive
+  width: 100%
+  overflow-x: auto
+
+.text-mobile
+  display: none
+
+.checkbox-toggle
+  color: #6C757D
+  font-size: 16px
+
+  position: relative
+  input
+    display: none
+
+.checkbox__text
+  position: relative
+  padding: 0 0 0 32px
+  cursor: pointer
+  display: inline-block
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 28px
+    height: 16px
+    border-radius: 8px
+    background: #F7F8FA
+    transition: .2s
+
+  &:after
+    content: ''
+    position: absolute
+    top: 2px
+    left: 2px
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    background: #6C757D
+    transition: .2s
+
+.checkbox-toggle input
+  &:checked + .checkbox__text
+    &:before
+      background: $accent
+
+    &:after
+      left: 13px
+      background: #fff

@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>BRNDX</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<!--header-->
+<header>
+  <div class="container">
+    <div class="row d-flex align-items-center">
+      <div class="col-7 col-md-4 d-flex align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <div class="dropdown">
+          <a href="#" class="btn-user dropdown-toggle" id="navbarDropdownUser" role="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false"><span class="btn-user-text">Константин</span>
+            <span class="btn-user-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-user" aria-labelledby="navbarDropdownUser">
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user"></use></svg></span>
+              <span class="dropdown-item-text">Личный кабинет</span>
+            </a>
+            <a class="dropdown-item" href="#">
+              <span class="dropdown-item-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#lock"></use></svg></span>
+              <span class="dropdown-item-text">Выход</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="notification">
+            <span class="notification-icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#notification1"></use></svg></span>
+          <span class="notification-circle"></span>
+        </a>
+      </div>
+
+      <div class="col-5 col-md-8 d-flex align-items-center">
+        <nav class="navbar navbar-expand-md">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                  Проекты
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Еда и напитки</a>
+                  <a class="dropdown-item" href="#">Красота и уход</a>
+                  <a class="dropdown-item" href="#">Бытовая химия</a>
+                  <a class="dropdown-item" href="#">Для детей</a>
+                  <a class="dropdown-item" href="#">Для животных </a>
+                  <a class="dropdown-item" href="#">Спорт</a>
+                  <a class="dropdown-item" href="#">Услуги</a>
+                  <a class="dropdown-item" href="#">Техника</a>
+                  <a class="dropdown-item" href="#">Авто</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Клиентам</a>
+              </li>
+              <li class="nav-item">
+                <a href="faq.html" class="nav-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="btn-burger"></div>
+        <div class="search-wrapper">
+          <div class="btn-search">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <div class="search-dropdown">
+            <form method="post" class="form-search">
+              <label><input type="text" required name="search"></label>
+              <button type="submit">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+            <div class="search-result">
+              <div class="search-result-col">
+                <h3>Проекты</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Конвергентный фьюжн глазами современников</a></li>
+                  <li><a href="#">Почему воспроизводима в лабораторных условиях темная материя?</a></li>
+                  <li><a href="#">Десуктивно-выпотной шаг смешения: основные моменты</a></li>
+                  <li><a href="#">Первоначальный часовой угол — актуальная национальная задача</a></li>
+                  <li><a href="#">Близкий метеорный дождь: основные моменты</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Статьи</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Центральный праздник франко-говорящего культурного сообщества: методология
+                    и особенности</a></li>
+                  <li><a href="#">Почему слабопроницаем бур?</a></li>
+                  <li><a href="#">Плотность твёрдой фазы как керн</a></li>
+                  <li><a href="#">Языковой Юпитер: гипотеза и теории</a></li>
+                  <li><a href="#">Почему вероятна широта?</a></li>
+                </ul>
+              </div>
+
+              <div class="search-result-col">
+                <h3>Отзывы</h3>
+                <ul class="list-menu-search">
+                  <li><a href="#">Растительность как засветка неба</a></li>
+                  <li><a href="#">Равновесный гидродинамический удар: гипотеза и теории</a></li>
+                  <li><a href="#">Угловое расстояние как гомогенная среда</a></li>
+                  <li><a href="#">Миксолидийский популяционный индекс — актуальная национальная задача</a></li>
+                  <li><a href="#">Живописный провоз кошек и собак</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--mobile menu-->
+  <div class="mobile-menu">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-7 order-sm-1">
+          <ul class="mobile-menu-list">
+            <li><a href="blog.html" class="mobile-menu-links">Блог</a></li>
+            <li><a href="about.html" class="mobile-menu-links">О нас</a></li>
+            <li><a href="clients.html" class="mobile-menu-links">Клиентам</a></li>
+            <li><a href="faq.html" class="mobile-menu-links">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-md-5">
+          <a href="projects.html" class="mobile-menu-links">Проекты</a>
+          <div class="row">
+            <div class="col-7 col-md-7 col-sm-8">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Еда и напитки</a></li>
+                <li><a href="#">Красота и уход</a></li>
+                <li><a href="#">Бытовая химия</a></li>
+                <li><a href="#">Для детей </a></li>
+                <li><a href="#">Для животных</a></li>
+
+              </ul>
+            </div>
+            <div class="col-5 col-md-5 col-sm-4">
+              <ul class="mobile-menu-sub">
+                <li><a href="#">Спорт</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Авто</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!--mobile menu end-->
+</header>
+<!--header end-->
+
+<!--breadcrumbs-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">BRNDX</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Константин</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--breadcrumbs end-->
+
+<section class="registration cabinet">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 col-lg-3 mb-30">
+        <div class="user-information">
+          <div class="user-information__photo"><img src="img/photo2.jpeg" alt=""></div>
+          <div class="user-information__body">
+            <div class="user-information__head">
+              <div class="user-name">Константин</div>
+              <div class="user-position">Опытный эксперт</div>
+              <div class="user-id"><p>ID пользователя</p> <span>815162342</span></div>
+            </div>
+
+            <div class="user-rating">
+              <div class="user-rating-box">
+                <div class="user-rating-box__icon"><img src="img/radial.svg" alt=""></div>
+                <p>8052</p><span>балла</span>
+              </div>
+              <div class="user-rating-box">
+                <div class="user-rating-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#heart2"></use>
+                  </svg>
+                </div>
+                <p>32</p><span>лайка</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9 col-lg-9">
+        <div class="box-responsive">
+          <ul class="nav nav-pills nav-tabs" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                 aria-controls="pills-home" aria-selected="true">Анкета</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                 aria-controls="pills-profile" aria-selected="false">Проекты</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+                 aria-controls="pills-contact" aria-selected="false">Отзывы</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-rating-tab" data-toggle="pill" href="#pills-rating" role="tab"
+                 aria-controls="pills-rating" aria-selected="false">Рейтинг</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-alerts-tab" data-toggle="pill" href="#pills-alerts" role="tab"
+                 aria-controls="pills-alerts" aria-selected="false">Оповещения</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab"
+                 aria-controls="pills-settings" aria-selected="false">Настройки</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="cabinet-content">
+              <h3>Анкета</h3>
+              <form method="post" class="registration-form">
+                <div class="form-group">
+                  <div class="form-group__title">
+                    <div class="form-group__icon"><img src="img/user-icon.svg" alt=""></div>
+                    <h4>Персональные данные</h4>
+                  </div>
+
+                  <label>
+                    <span class="input-title">Фамилия</span>
+                    <input type="text" name="first_name" value="Константинопольский">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Имя</span>
+                    <input type="text" name="name" value="Константин">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Отчество</span>
+                    <input type="text" name="last_name" value="Константинович">
+                  </label>
+
+                  <label class="label-date">
+                    <span class="input-title">Дата рождения</span>
+                    <input type="text" name="date" class="datepicker" value="18.05.1993">
+                    <span class="input-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#calendar"></use></svg></span>
+                  </label>
+
+                  <div class="form-item">
+                    <span class="input-title">Пол</span>
+                    <ul class="list-radio">
+                      <li>
+                        <label class="radio">
+                          <input class="radio-inp" type="radio" name="radio">
+                          <span class="radio-custom"></span>
+                          <span class="label">Женский</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="radio">
+                          <input class="radio-inp" type="radio" name="radio" checked>
+                          <span class="radio-custom"></span>
+                          <span class="label">Мужской</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-group__title">
+                    <div class="form-group__icon"><img src="img/location-icon.svg" alt=""></div>
+                    <h4>География</h4>
+                  </div>
+
+                  <label>
+                    <span class="input-title">Страна</span>
+                    <select name="select" class="select">
+                      <option value="Российская Федерация">Российская Федерация</option>
+                      <option value="Российская Федерация">Российская Федерация</option>
+                      <option value="Российская Федерация">Российская Федерация</option>
+                    </select>
+                  </label>
+
+                  <label>
+                    <span class="input-title">Регион</span>
+                    <select name="select" class="select">
+                      <option value="Карачаево-Черкесская Республика">Карачаево-Черкесская Республика</option>
+                      <option value="Карачаево-Черкесская Республика">Карачаево-Черкесская Республика</option>
+                      <option value="Карачаево-Черкесская Республика">Карачаево-Черкесская Республика</option>
+                    </select>
+                  </label>
+
+                  <label>
+                    <span class="input-title">Населенный пункт</span>
+                    <select name="select" class="select">
+                      <option value="Старокозьмодемьяновское">Старокозьмодемьяновское</option>
+                      <option value="Старокозьмодемьяновское">Старокозьмодемьяновское</option>
+                      <option value="Старокозьмодемьяновское">Старокозьмодемьяновское</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-group__title">
+                    <div class="form-group__icon"><img src="img/key.svg" alt=""></div>
+                    <h4>Данные профиля</h4>
+                  </div>
+
+                  <label>
+                    <span class="input-title">Никнейм</span>
+                    <input type="text" name="nickname" value=" k.konstantinopolsky">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Email</span>
+                    <input type="text" name="mail" required value="k.konstantinopolsky@gmail.com">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Телефон</span>
+                    <input type="text" name="phone" required value="+7 925 987 65 43">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Пароль</span>
+                    <input type="text" name="password" required value="••••••••">
+                  </label>
+
+                  <label>
+                    <span class="input-title">Пароль еще раз</span>
+                    <input type="text" name="double_password" required value="••••••••">
+                  </label>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+
+                <div class="invite-friend">
+                  <h4>Пригласи друга участвовать в проектах</h4>
+                  <p>Отправь ссылку друзьям и получи дополнительные баллы</p>
+                  <div class="form-invite">
+                    <label>
+                      <span class="input-title">Ссылка</span>
+                      <input type="text" name="links" value="brndx.ru/ru/ref/815162342">
+                    </label>
+                    <button type="button" onclick="myFunction()" class="btn btn-copy">
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#copy"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="cabinet-content">
+              <h3>Проекты</h3>
+              <div class="row">
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project1.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Глубокий образ: методология
+                        и особенности</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>300</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>01.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Фьюжн, не меняя концепции, изложенной выше, выбирает случайный математический горизонт, при
+                          этом
+                          его стоимость значительно ниже, чем в бутылках</p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Принять участие</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project2.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Тавтология как эстетическое
+                        воздействие</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>31</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>18.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Геологическое строение представляет собой амфибрахий. Уравнение времени выбирает живописный
+                          возмущающий фактор.</p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Принять участие</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project3.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Гносеологический статус художника:
+                        гипотеза и
+                        теории</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>31</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>18.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Социальная стратификация, с другой стороны, специфицирует вечнозеленый кустарник, не считаясь
+                          с
+                          затратами. Фьюжн порождает презентационный материал. </p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Принять участие</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project4.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Потребительский принцип артистизма —
+                        актуальная национальная задача</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>31</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>18.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Глиссандо существенно символизирует тон-полутоновый звукосниматель. Тектоника возможна.
+                          Символический метафоризм притягивает архипелаг. </p>
+                      </div>
+                      <a href="#" class="btn btn-primary">Принять участие</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project5.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Гносеологический статус художника:
+                        гипотеза и
+                        теории</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>31</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>18.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Социальная стратификация, с другой стороны, специфицирует вечнозеленый кустарник, не считаясь
+                          с
+                          затратами. Фьюжн порождает презентационный материал. </p>
+                      </div>
+                      <a href="#" class="btn btn-grey">Результаты</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 mb-32 project-col">
+                  <div class="project-card">
+                    <a href="project-page.html" class="project-card__img"><img src="img/project6.jpeg" alt=""></a>
+                    <div class="project-card__body">
+                      <a href="project-page.html" class="project-card__title">Потребительский принцип артистизма —
+                        актуальная
+                        национальная задача</a>
+
+                      <ul class="project-card__info">
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#people"></use>
+                            </svg>
+                          </div>
+                          <p>Участников</p>
+                          <span>31</span>
+                        </li>
+                        <li>
+                          <div class="project-card__icon">
+                            <svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#calendar"></use>
+                            </svg>
+                          </div>
+                          <p>Окончание регистрации</p>
+                          <span>18.01.21</span>
+                        </li>
+                      </ul>
+
+                      <div class="box-text">
+                        <p>Глиссандо существенно символизирует тон-полутоновый звукосниматель. Тектоника возможна.
+                          Символический метафоризм притягивает архипелаг. </p>
+                      </div>
+                      <a href="#" class="btn btn-grey">Результаты</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="cabinet-content">
+              <h3>Отзывы</h3>
+              <div class="row">
+                <div class="col-12">
+                  <div class="reviews-box">
+                    <div class="reviews-box__header">
+                      <div class="reviews-box__avatar"><img src="img/photo2.jpeg" alt=""></div>
+                      <div class="reviews-box__user">
+                        <h4>Константин Константинопольский</h4>
+                        <div class="position-user">Опытный эксперт</div>
+                        <div class="reviews-box__date">14.01.21</div>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__body">
+                      <div class="reviews-box__content">
+                        <h3>Уличный снежный покров: основные моменты</h3>
+                        <div class="box-text">
+                          <p>Алеаторика заканчивает цикл. Фузз монотонно иллюстрирует ревер, что отчасти объясняет такое
+                            количество кавер-версий. Живая сессия имеет рок-н-ролл 50-х. Драм-машина, согласно
+                            традиционным
+                            представлениям, начинает канал, хотя это довольно часто напоминает песни Джима Моррисона.
+                            Параллакс, согласно традиционным представлениям, дает бессознательный синтез искусств.</p>
+                        </div>
+
+                        <a href="#" class="links-accent read-more">Читать дальше</a>
+                      </div>
+                      <div class="reviews-box__img"><img src="img/reviews-img1.png" alt=""></div>
+                    </div>
+
+                    <div class="reviews-box__footer">
+                      <ul class="list-share">
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#heart"></use></svg></span><span class="list-share__text">29</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#message2"></use></svg></span><span class="list-share__text">3</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#share2"></use></svg></span><span
+                            class="list-share__text">Поделиться</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="reviews-box">
+                    <div class="reviews-box__header">
+                      <div class="reviews-box__avatar"><img src="img/photo2.jpeg" alt=""></div>
+                      <div class="reviews-box__user">
+                        <h4>Константин Константинопольский</h4>
+                        <div class="position-user">Опытный эксперт</div>
+                        <div class="reviews-box__date">10.01.21</div>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__body">
+                      <div class="reviews-box__content">
+                        <h3>Художественная гармония как синхрония</h3>
+                        <div class="box-text">
+                          <p>Гекзаметр, несмотря на то, что все эти характерологические черты отсылают не к единому
+                            образу
+                            нарратора, точно притягивает мелодический полифонический роман. Заимствование интегрирует
+                            ритм.
+                            Стилистическая игра представляет собой подтекст.</p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__footer">
+                      <ul class="list-share">
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#heart"></use></svg></span><span class="list-share__text">29</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#message2"></use></svg></span><span class="list-share__text">3</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#share2"></use></svg></span><span
+                            class="list-share__text">Поделиться</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="reviews-box">
+                    <div class="reviews-box__header">
+                      <div class="reviews-box__avatar"><img src="img/photo2.jpeg" alt=""></div>
+                      <div class="reviews-box__user">
+                        <h4>Константин Константинопольский</h4>
+                        <div class="position-user">Опытный эксперт</div>
+                        <div class="reviews-box__date">10.01.21</div>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__body">
+                      <div class="reviews-box__content">
+                        <h3>Разнокомпонентный дисторшн — актуальная национальная задача</h3>
+                        <div class="box-text">
+                          <p>Нижнее течение однократно. Существующая орфографическая символика никак не приспособлена
+                            для
+                            задач письменного воспроизведения смысловых нюансов устной речи, однако Северное полушарие
+                            начинает полого-холмистый дисторшн. Центральная площадь многопланово изменяет
+                            септаккорд.</p>
+                        </div>
+                      </div>
+                      <div class="reviews-box__img"><img src="img/reviews-img2.png" alt=""></div>
+                    </div>
+
+                    <div class="reviews-box__footer">
+                      <ul class="list-share">
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#heart"></use></svg></span><span class="list-share__text">29</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#message2"></use></svg></span><span class="list-share__text">3</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#share2"></use></svg></span><span
+                            class="list-share__text">Поделиться</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="reviews-box">
+                    <div class="reviews-box__header">
+                      <div class="reviews-box__avatar"><img src="img/photo2.jpeg" alt=""></div>
+                      <div class="reviews-box__user">
+                        <h4>Константин Константинопольский</h4>
+                        <div class="position-user">Опытный эксперт</div>
+                        <div class="reviews-box__date">10.01.21</div>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__body">
+                      <div class="reviews-box__content">
+                        <h3>Художественная гармония как синхрония</h3>
+                        <div class="box-text">
+                          <p>Гекзаметр, несмотря на то, что все эти характерологические черты отсылают не к единому
+                            образу
+                            нарратора, точно притягивает мелодический полифонический роман. Заимствование интегрирует
+                            ритм.
+                            Стилистическая игра представляет собой подтекст.</p>
+                        </div>
+
+                        <a href="#" class="links-accent read-more">Читать дальше</a>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__footer">
+                      <ul class="list-share">
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#heart"></use></svg></span><span class="list-share__text">29</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#message2"></use></svg></span><span class="list-share__text">3</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#share2"></use></svg></span><span
+                            class="list-share__text">Поделиться</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="reviews-box">
+                    <div class="reviews-box__header">
+                      <div class="reviews-box__avatar"><img src="img/photo2.jpeg" alt=""></div>
+                      <div class="reviews-box__user">
+                        <h4>Константин Константинопольский</h4>
+                        <div class="position-user">Опытный эксперт</div>
+                        <div class="reviews-box__date">10.01.21</div>
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__body">
+                      <div class="reviews-box__content">
+                        <h3>Заснеженный абориген с чертами экваториальной и монголоидной рас — актуальная национальная
+                          задача</h3>
+                        <div class="box-text">
+                          <p>Его экзистенциальная тоска выступает как побудительный мотив творчества, однако
+                            стихотворение
+                            составляет октавер. Звукопись, согласно традиционным представлениям, пространственно
+                            начинает
+                            неоцен. В связи с этим нужно подчеркнуть, что этажное залегание непрерывно. Эффект «вау-вау»
+                            представляет собой куэстовый бамбук.</p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="reviews-box__footer">
+                      <ul class="list-share">
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#heart"></use></svg></span><span class="list-share__text">29</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#message2"></use></svg></span><span class="list-share__text">3</span>
+                        </a></li>
+                        <li><a href="#">
+                    <span class="list-share__icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#share2"></use></svg></span><span
+                            class="list-share__text">Поделиться</span>
+                        </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <a href="#" class="btn btn-border-accent btn-load">Загрузить еще</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-rating" role="tabpanel" aria-labelledby="pills-rating-tab">
+            <div class="cabinet-content">
+              <h3>Рейтинг</h3>
+              <div class="rating-scale-wrapper">
+                <div class="rating-marker">
+                  <div class="rating-marker-photo">
+                    <div class="img"><img src="img/photo2.jpeg" alt=""></div>
+                  </div>
+                  <div class="rating-marker-text">
+                    <h5>Константин</h5>
+                    <p>8052 <span>балла</span></p>
+                  </div>
+                </div>
+
+                  <div class="rating-scale-stairs">
+                    <div class="rating-scale-stairs__step rating-scale-stairs__step1">
+                      <p>Новичок</p>
+
+                    </div>
+                    <div class="rating-scale-stairs__elem rating-scale-stairs__elem1">
+                      <div class="rating-scale-stairs__circle"></div>
+                    </div>
+                    <div class="rating-scale-stairs__step rating-scale-stairs__step2">
+                      <p>Знаток</p>
+                      <div class="rating-scale-values__box">
+                        <p>500</p>
+                      </div>
+                    </div>
+                    <div class="rating-scale-stairs__elem rating-scale-stairs__elem2">
+                      <div class="rating-scale-stairs__circle"></div>
+                    </div>
+                    <div class="rating-scale-stairs__step rating-scale-stairs__step3">
+                      <p>Эксперт</p>
+                      <div class="rating-scale-values__box">
+                        <p>1000</p>
+                      </div>
+                    </div>
+                    <div class="rating-scale-stairs__elem rating-scale-stairs__elem3">
+                      <div class="rating-scale-stairs__circle"></div>
+                    </div>
+                    <div class="rating-scale-stairs__step rating-scale-stairs__step4">
+                      <p>Опытный эксперт</p>
+                      <div class="rating-scale-values__box">
+                        <p>5000 <span>баллов</span></p>
+                        <p>2+ <span>проекта</span></p>
+                      </div>
+                    </div>
+                    <div class="rating-scale-stairs__elem rating-scale-stairs__elem4">
+                      <div class="rating-scale-stairs__circle"></div>
+                    </div>
+                    <div class="rating-scale-stairs__step rating-scale-stairs__step5">
+                      <p class="text-pc">Суперэксперт</p>
+                      <p class="text-mobile">Супер- эксперт</p>
+                      <div class="rating-scale-values__box">
+                        <p>10 000 <span>баллов</span></p>
+                        <p>5+ <span>проекта</span></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="history-scores">
+                <h3>История начисление баллов</h3>
+
+                <ul class="list-scores">
+                  <li>
+                    <p>Авторизация</p>
+                    <span><strong>+1 </strong>балл</span>
+                  </li>
+                  <li>
+                    <p>Приглашение друга</p>
+                    <span><strong>+5 </strong>баллов</span>
+                  </li>
+                  <li>
+                    <p>Авторизация</p>
+                    <span><strong>+1 </strong>балл</span>
+                  </li>
+                  <li>
+                    <p>Авторизация</p>
+                    <span><strong>+1 </strong>балл</span>
+                  </li>
+                  <li>
+                    <p>Авторизация</p>
+                    <span><strong>+1 </strong>балл</span>
+                  </li>
+                  <li>
+                    <p>Привязка соцсети к аккаунту</p>
+                    <span><strong>+20 </strong>баллов</span>
+                  </li>
+                  <li>
+                    <p>Авторизация</p>
+                    <span><strong>+1 </strong>балл</span>
+                  </li>
+                  <li>
+                    <p>Добавление email</p>
+                    <span><strong>+20 </strong>баллов</span>
+                  </li>
+                  <li>
+                    <p>Регистрация</p>
+                    <span><strong>+50 </strong>баллов</span>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-border-accent">Загрузить еще</a>
+              </div>
+
+              <div class="invite-friend">
+                <h4>Пригласи друга участвовать в проектах</h4>
+                <p>Отправь ссылку друзьям и получи дополнительные баллы</p>
+                <div class="form-invite">
+                  <label>
+                    <span class="input-title">Ссылка</span>
+                    <input type="text" name="links" value="brndx.ru/ru/ref/815162342">
+                  </label>
+                  <button type="button" onclick="myFunction()" class="btn btn-copy">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-alerts" role="tabpanel" aria-labelledby="pills-alerts-tab">
+            <div class="cabinet-content">
+              <h3>Оповещения</h3>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-settings" role="tabpanel"
+               aria-labelledby="pills-settings-tab">
+            <div class="cabinet-content">
+              <h3>Настройки</h3>
+
+              <form method="post" class="form-settings">
+                <div class="row">
+                  <div class="col-12 col-sm-4 col-md-6 col-lg-4 mb-32">
+                    <div class="settings-box">
+                      <h4>Аватар</h4>
+                      <div class="add-photo">
+                        <div class="box-avatar"><img src="img/photo2.jpeg" alt=""></div>
+                        <label class="label-file btn-border-accent btn">
+                          <input type="file" class="input-file">
+                          <span class="label-file-text">Выбрать аватар</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-6 col-lg-4 mb-32">
+                    <div class="settings-box">
+                      <h4>Социальные сети</h4>
+                      <div class="box-text">
+                        <p>Привяжи социальную сеть и входи в один клик</p>
+                      </div>
+
+                      <a href="#" class="btn btn-blue btn-bind">
+                        <span class="btn-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#facebook2"></use></svg></span>
+                        <span class="btn-text">Привязать</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-4 col-md-6 col-lg-4 mb-32">
+                    <div class="settings-box">
+                      <h4>Рассылка</h4>
+
+                      <label class="checkbox-toggle">
+                        <input type="checkbox" />
+                        <span class="checkbox__text">Получение рассылки на электронную почту</span>
+                      </label>
+
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                  </div>
+                </div>
+
+              </form>
+              <div class="invite-friend">
+                <h4>Пригласи друга участвовать в проектах</h4>
+                <p>Отправь ссылку друзьям и получи дополнительные баллы</p>
+                <div class="form-invite">
+                  <label>
+                    <span class="input-title">Ссылка</span>
+                    <input type="text" name="links" value="brndx.ru/ru/ref/815162342">
+                  </label>
+                  <button type="button" onclick="myFunction()" class="btn btn-copy">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!--about end-->
+
+
+<!--footer-->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-8 col-xl-7 d-flex align-items-center flex-wrap">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+        <ul class="nav nav-footer">
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Проекты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-12 col-lg-4 col-xl-5">
+        <div class="btn-group">
+          <a href="#" class="btn btn-border">Сотрудничество</a>
+          <a href="#" class="btn btn-border">Написать нам</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <p>© BRNDX, 2021. Все права защищены.</p>
+          <p>Пользовательское соглашение, Политика конфиденциальности, Политика в отношении файлов cookie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--btn scroll-->
+<a href="#" class="btn-scroll-up">
+  <svg class="svg-icon">
+    <use xlink:href="img/sprite.svg#arrow-top"></use>
+  </svg>
+</a>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

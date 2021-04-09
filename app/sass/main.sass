@@ -530,19 +530,35 @@ h2
   cursor: pointer
 
 .radio-custom
-  width: 13px
-  height: 13px
-  min-width: 13px
+  width: 14px
+  height: 14px
+  min-width: 14px
   background: #ffffff
   border: 1px solid #EBEEF2
     radius: 50%
   position: relative
   transition: .3s ease
   margin: 0 8px 0 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+
 
 .radio-inp:checked + .radio-custom
-  background: $accent
+  background: transparent
   border-color: $accent
+  &:before
+    background: $accent
+
 
 .ui-widget.ui-widget-content
   padding: 16px
@@ -711,5 +727,6 @@ h2
 @import "project"
 @import "project-page"
 @import "registration"
+@import "cabinet"
 @import "media"
 // Всегда в конце
